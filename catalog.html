@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Глейси</title>
+  </head>
+  <body>
+
+  	<header class="main-header">
+  		<div class="container"> <!--ЦЕНТРОВЩИК-->
+  			
+  			<div class="logo">
+  				<!--В ВЕБИНАРЕ КАРТИНКИ КОММЕНТИРУЮТ -->
+  				<img src="img/logo.png" width="100" height="100" alt="GllacyShop">
+  			</div>
+
+  			<nav class="main-menu">
+   				<ul>
+  					<li><a href="#">Каталог</a></li>
+  						<ul class="sub-menu">
+  							<li>Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
+  							<li><a href="#">Сливочное</a></li>
+  							<li><a href="#">Щербеты</a></li>
+  							<li><a href="#">Фруктовый лёд</a></li>
+  							<li><a href="#">Мелорин</a></li>
+  						</ul>
+  					<li><a href="#">Доставка и оплата</a></li>
+  					<li><a href="#">О Компании</a></li>
+  				</ul>
+  			</nav>
+
+  			<div class="user-block">
+
+  				<form class="search" action="https://echo.htmlacademy.ru" method="post">
+  					<input type="text" name="search" placeholder="Что ищем?">
+  				</form>
+
+  				<form class="login" action="https://echo.htmlacademy.ru" method="post">
+  					<input type="text" name="e-mail" placeholder="Электронная почта">
+  					<input type="password" name="password" placeholder="Пароль">
+  					<a class="btn login" href="#">Войти</a>
+  					<a class="btn login-reminder" href="#">Забыли пароль?</a>
+  					<a class="btn registration" href="#">Новая Регистрация</a>
+  				</form>
+
+  				<div class="cart">
+            <!--ВООБЩЕ НЕ ПОЙМУ КАК ЭТО РЕАЛИЗОВАТЬ ?! ПРИДУМАЛОСЬ ТАБЛИЦЕЙ А ТО ЧТО ВИДИМ 2 ТОВАРА ССЫЛКА  -->
+            <a class="cart" href="#">2 товара</a>
+  					<table>
+  						<tr>
+  							<td>X</td>
+  							<td><img src="img.png" width="20" height="20">
+  							<td>Пломбир с апельсиновым джемом</td>
+  							<td>1,5кг Х 200 руб.</td>
+  							<td>300 руб.</td>
+  						</tr>
+  						<tr>
+  							<td>X</td>
+  							<td><img src="img.png" width="20" height="20">
+  							<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+  							<td>1,5кг Х 300 руб.</td>
+  							<td>450 руб.</td>
+  						</tr>
+  					</table>
+  					<p>Итого: 750 руб.</p>
+  					<a class="btn order" href="#">Оформить заказ</a>
+  				</div>	
+   			</div>
+
+   			<div class="contacts">
+  				<p>с 10 до 20, ежедневно</p>
+  				<p>8 812 450-25-25</p>
+  			</div>
+
+  		</div>
+  	</header>
+
+    <main class="container">
+
+      <div class="breadcrumbs">
+        <ul>
+          <li>Главная</li>
+          <li>Каталог</li>
+          <li>Сливочное</li>
+        </ul>
+      </div>
+
+      <h2>Сливочное мороженое</h2>
+
+      <form class="search-criteria" action="https://echo.htmlacademy.ru" method="post">
+        
+        <label for="sort-by">Сортировка:</label>
+        <select id="sort-by" name="theme">
+          <option value="popular">по популярности</option>
+          <option value="price">по цене</option>
+          <option value="exist">по наличию</option>
+        </select>
+
+        <label for="price-range">Цена: 100 руб. - 500 руб.</label>
+        <input id="price-range" name=="price-range" type="range" min="100" max="500">
+
+        <fieldset>
+          <legend>Жирность:</legend>
+            
+            <input id="zero" name="zero" type="radio">
+            <label for="zero">0%</label> 
+
+            <input id="ten" name="ten" type="radio" checked>
+            <lavel for="ten">до 10%</label>        
+            
+            <input id="thirty" name="thirty" type="radio"> 
+            <label for="thirty">до 30%</label>
+            
+            <input id="up-thirty" name="fatness" type="radio"> 
+            <label for="up-thirty">выше 30%</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Наполнители:</legend>
+          
+          <input id="chocolate" name="chocolate" type="checkbox" checked> 
+          <label for id="chocolate">шоколадные</label>
+
+          <input id="sugar" name="sugar" type="checkbox" checked> 
+          <label for id="sugar">сахарные присыпки</label>
+
+          <input id="fruits" name="fruits" type="checkbox"> 
+          <label for id="fruits">фрукты</label>
+
+          <input id="syrups" name="syrups" type="checkbox"> 
+          <label for id="syrups">сиропы</label>
+
+          <input id="jams" name="jams" type="checkbox"> 
+          <label for id="jams">джемы</label>
+        </fieldset>
+
+        <!--ПО ЛОГИКЕ ДОЛЖНА БЫТЬ КНОПКА, КОТОРАЯ ОТРАБАТЫВЕТ ВЫБОР ИЗ ПОЛЕЙ ВЫШЕ -->
+        <button class="search-criteria" type="button">Применить</button>
+
+      </form>
+
+      <section class="products">
+        <div class="product-item">
+          <img src="product1.png" width="150" height="50" alt="Товар1">
+          <b>310Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой струшкой</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product2.png" width="150" height="50" alt="Товар2">
+          <b>380Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product3.png" width="150" height="50" alt="Товар3">
+          <b>355Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product4.png" width="150" height="50" alt="Товар4">
+          <b>415Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product5.png" width="150" height="50" alt="Товар5">
+          <b>325Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочное с брусничным джемом</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product6.png" width="150" height="50" alt="Товар6">
+          <b>410Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+        </div>ы
+
+        <div class="product-item">
+          <img src="product7.png" width="150" height="50" alt="Товар7">
+          <b>375Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product8.png" width="150" height="50" alt="Товар8">
+          <b>320Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно с шоколадной стружкой</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product9.png" width="150" height="50" alt="Товар9">
+          <b>440Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product10.png" width="150" height="50" alt="Товар10">
+          <b>435Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно с ментоловым сиропом</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product11.png" width="150" height="50" alt="Товар11">
+          <b>355Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно с кусочками черного шоколада</a></h3>
+        </div>
+
+        <div class="product-item">
+          <img src="product12.png" width="150" height="50" alt="Товар12">
+          <b>420Р/кг</b> <!-- знак рудля -->
+          <h3><a href="#">Сливочно с мятным сиропом</a></h3>
+        </div>
+
+        <a class="btn catalog-page" href="#">1</a>
+        <a class="btn catalog-page" href="#">2</a>
+        <a class="btn catalog-page" href="#">3</a>
+        <a class="btn catalog-page" href="#">4</a>
+        <a class="btn catalog-page" href="#">5</a>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw"href="#">Twitter</a>
+          <a class="social-btn social-btn-in"href="#">Instagram</a>
+          <a class="social-btn social-btn-fb"href="#">Facebook</a>
+          <a class="social-btn social-btn-vk"href="#">VK</a>
+        </div>
+
+        <div class="footer-navigation">
+          <a href="#"><span>Сердечко</span> Для поставщиков</a>
+          <a href="#">О производстве</a>
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="logo">
+            <!--В ВЕБИНАРЕ КАРТИНКИ КОММЕНТИРУЮТ -->
+            <img src="htmlacademy/logo.png" width="100" height="100" alt="HTML Academy">
+          </div>
+          <p>Сделано в <a class="btn" href="https://htmlacademy.ru"> HTML Academy</a> @ 2017</p>              
+            </div>
+      </div>
+    </footer>   
+
+
+<!-- ПОДКЛЮЧЕНИЕ JAVA СКРИПТА ВСЕГДА В КОНЦЕ БОДИ! 
+    <script>
+    .....
+    </script> -->
+  </body>
+</html>
+
