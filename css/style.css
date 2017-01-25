@@ -1,0 +1,79 @@
+body {
+	font-size: 18px; /* КАК ВЫБИРАЮТ ШРИФТ ДЛЯ BODY??? ТОТ РАЗМЕР КОТОРЫЙ ЧАЩЕ ВСЕГО???*/
+	line-height: 22px;
+	color: #ffffff; /* ПО МОЕМУ МНЕНИЮ ЭТОГО ЦВЕТА БОЛЬШЕ НА СТРАНИЦЫ*/
+	background-color: #849d8f; /* ЧТО БЫ БЫЛО ВИДНО ЦВЕТ ШРИФТА*/
+	font-weight: bold;
+	font-family: "Roboto", "Arial", serif;
+}
+
+.main a {
+	font-size: 16px; 
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.main .active,
+.sub-menu .active {
+	color: #323232;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sub-menu li,
+.sub-menu a {
+	color: #323232;
+	font-weight: normal;
+}
+
+.slider h2 {
+	font-size: 60px; 
+	line-height: 60px;
+}
+
+.promo h2 {
+	font-size: 35px; 
+	line-height: 41px;
+}
+
+.promo p {
+	font-size: 18px; 
+	line-height: 22px;
+}
+
+.promo .btn {
+	font-size: 18px; 
+	line-height: 24px;
+}
+
+.sliders .btn {
+	font-size: 32px; 
+	line-height: 44px;
+}
+
+.products h3 {
+	font-size: 16px; 
+	line-height: 22px;
+}
+
+.shop-description h2,
+.news-and-subsrcribe a {
+	font-size: 24px; 
+	line-height: 30px;
+	color: #323232;
+}
+
+.shop-description p,
+.news-and-subsrcribe h2 {
+	font-size: 16px; 
+	line-height: 22px;
+	color: #323232;
+}
+
+.subscribe-item p {
+	font-size: 16px; 
+	line-height: 22px;
+	font-weight: normal;
+	color: #5a5a5a;
+}
+
