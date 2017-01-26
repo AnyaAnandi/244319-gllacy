@@ -13,10 +13,22 @@ body {
 	color: #ffffff;
 }
 
-.main .active,
-.sub-menu .active {
+.main .active {
 	color: #323232;
 	text-decoration: none;
+	font-weight: bold;
+}
+
+.sub-menu a {
+	font-size: 14px; 
+	line-height: 16px;
+	color: #323232;
+	text-decoration: none;
+}
+
+.sub-menu .active {	
+	font-size: 14px; 
+	line-height: 16px;
 	font-weight: bold;
 }
 
