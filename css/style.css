@@ -4,7 +4,7 @@ body {
 	color: #ffffff; /* ПО МОЕМУ МНЕНИЮ ЭТОГО ЦВЕТА БОЛЬШЕ НА СТРАНИЦЫ*/
 	background-color: #849d8f; /* ЧТО БЫ БЫЛО ВИДНО ЦВЕТ ШРИФТА*/
 	font-weight: bold;
-	font-family: "Roboto", "Arial", serif;
+	font-family: "Roboto", "Arial", sans-serif;
 }
 
 .main a {
