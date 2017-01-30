@@ -93,8 +93,16 @@ body {
 }
 
 /* СЕТКА INDEX */
+.sub-menu,
+.search-field,
+.login,
+.slider2,
+.slider3,
+.cart  {
+	display: none;
+}
 .main-header {
-	margin-bottom: 26px; /* 324 pxРАССТОЯНИЕ ДО НАДПИСИ КРЕМ-БРЮЛЕ */
+	margin-bottom: 0px; /* 324 pxРАССТОЯНИЕ ДО НАДПИСИ КРЕМ-БРЮЛЕ */
 }
 .container {
 	width: 1146px;
@@ -115,14 +123,28 @@ body {
 	float: left;
 }
 
+.main li {
+	list-style: none;
+	float: left;
+	margin-right: 18px;
+}
+
 .user-block {
 	width: 261px;
 	min-height: 64px;
 	float: right;
+	
+}
+
+.user-block a {
+	float: left;
+	margin-right: 10px; /* ???КАК СЧИАТЬ ОТСТУП - ДО БЛОКА НАРИСОВАННОГО ИЛИ ТЕКСТА??? */
+	margin-top: 15px; /* ??? ЕСЛИ ЭТО НЕ ВКЛЮЧИТЬ, ТО УЕЗЖАЮТ ВВЕРХ ССЫЛКИ */
 }
 .contacts {
 	clear: both;
 	float: right;
+	margin-top: -30px; /* ??? КАК СДЕЛАТЬ НОМРАЛЬНОЕ РАССТОЯНИЕ ??? */
 }
 
 .clearfix::after {
@@ -196,6 +218,10 @@ body {
 	margin-right: 0;
 }
 
+.map {
+	width: 100%;
+}
+
 .main-footer {
 	margin-top: 37px;
 }
@@ -235,6 +261,12 @@ body {
 
 
 /* СЕТКА CATALOG */
+.breadcrumbs li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
 .catalog-title {
 	margin-top: 10px;
 }
@@ -275,6 +307,11 @@ body {
 	margin-top: 80px;
 	clear: both;
 	float: right;
+}
+.pagination li {
+	list-style: none;
+	float: left;
+	margin-right: 14px;
 }
 
 

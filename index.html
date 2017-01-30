@@ -30,25 +30,26 @@
   				</ul>
   			</nav>
 
-  			<div class="user-block">
+  			<div class="user-block clearfix">
 
   				<form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="submit" value="Знак лупы"> <!--УБРАТЬ ПОСЛЕ CSS -->
-  					<input type="text" name="search" placeholder="Что ищем?">
+            <a href="#">Знак лупы</a> <!--УБРАТЬ ПОСЛЕ CSS -->
+  					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
   				</form>
 
+          <a href="#">Вход</a> <!--УБРАТЬ ПОСЛЕ CSS -->
   				<form class="login" action="https://echo.htmlacademy.ru" method="post">
-  					<input type="text" name="e-mail" placeholder="Электронная почта">
+            <input type="text" name="e-mail" placeholder="Электронная почта">
   					<input type="password" name="password" placeholder="Пароль">
   					<a class="login" href="#">Войти</a>
   					<a class="login-reminder" href="#">Забыли пароль?</a>
   					<a class="btn registration" href="#">Новая Регистрация</a>
   				</form>
 
-  				<div class="cart">
-  					<a class="btn cart" href="#">Пусто</a>
-            <!--ПУСКАЯ КОЗИНА - ДЕЛАЕМ ЧЕРЕЗ CSS-->
-  					 					
+          <a class="cart-empty" href="#">Пусто</a>
+          <div class="cart">
+  					
+            <!--ПУСКАЯ КОЗИНА - ДЕЛАЕМ ЧЕРЕЗ CSS-->  					 				
   				</div>	
    			</div>
 
@@ -74,7 +75,7 @@
             <a class="btn" href="#">Давайте оба!</a>
           </div>
 
-          <!-- 
+          
 
           <div class="slider slider2">
             <img src="img/ice-cream2-bg.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
@@ -89,7 +90,7 @@
           </div>
         </div>
 
-        -->
+        
 
         <div class="slider-controls">
           <label for="point-1"></label>
@@ -172,25 +173,31 @@
 	  		</div>
 	  	</section>
 
-	  	<div class="map-adress clearfix">
+        <div class="adress">
+          <p>Адрес главного офиса <br>
+          и офлайн магазина:<br>
+          ул. Большая Конюшенная <br>
+          19/8, Санкт-Петербург</p>
+
+          <p>Для заказа по телефону:<br>
+          8 812 450-25-25<br>
+          (с 10 до 20 ежедневно)</p>
+          
+          <a class="btn" href="#">Форма обратной связи</a>
+        </div>
+
+    </main>
+
+
+
+	  	<div class="map-adress">
 	  		<!--РИСУНОК МОРОЖЕНОГО ЛУЧШЕ ЧЕРЕЗ CSS СДЕЛАТЬ !!! -->
         <img class="map" src="img/map-and-ponter.jpg" width="1200" height="432" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" 
-	 
-	   		<div class="adress">
-	  			<p>Адрес главного офиса <br>
-	  			и офлайн магазина:<br>
-	  			ул. Большая Конюшенная <br>
-	  			19/8, Санкт-Петербург</p>
-
-	  			<p>Для заказа по телефону:<br>
-	  			8 812 450-25-25<br>
-	  			(с 10 до 20 ежедневно)</p>
-	  			
-	  			<a class="btn" href="#">Форма обратной связи</a>
-	   		</div>
 	  	</div>
 
-  	</main>
+
+
+  	
 
   	<footer class="main-footer">
   		<div class="container clearfix">

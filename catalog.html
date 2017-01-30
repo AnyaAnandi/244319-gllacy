@@ -17,7 +17,7 @@
   			</div>
 
   			<nav class="main-menu">
-   				<ul>
+   				<ul class="main">
   					<li>
               <a href="#">Каталог</a>
   						  <ul class="sub-menu">
@@ -33,13 +33,14 @@
   				</ul>
   			</nav>
 
-  			<div class="user-block">
+  			<div class="user-block clearfix">
 
   				<form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="submit" value="Знак лупы"> <!-- ПОТОМ УБРАТЬ VALUE -->
-  					<input type="text" name="search" placeholder="Что ищем?">
+            <a href="#">Знак лупы</a> <!--УБРАТЬ ПОСЛЕ CSS -->
+  					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
           </form>
 
+          <a href="#">Вход</a> <!--УБРАТЬ ПОСЛЕ CSS -->
   				<form class="login" action="https://echo.htmlacademy.ru" method="post">
   					<input type="text" name="e-mail" placeholder="Электронная почта">
   					<input type="password" name="password" placeholder="Пароль">
@@ -48,12 +49,9 @@
   					<a class="btn registration" href="#">Новая Регистрация</a>
   				</form>
 
+          <a class="cart-with-item" href="#">2 товара</a>
   				<div class="cart">
-            
-            <a class="cart" href="#">2 товара</a>
-            
-            <!-- КОРЗИНА ЗАПОЛНЕННАЯ
-
+                
             <table>
   						<tr>
   							<td>X</td>
@@ -73,7 +71,7 @@
   					<p>Итого: 750 руб.</p>
   					<a class="btn order" href="#">Оформить заказ</a>
   				</div>
-          -->	
+          
    			</div>
 
    			<div class="contacts">
@@ -86,7 +84,7 @@
 
     <main class="container">
 
-      <div class="breadcrumbs">
+      <div class="breadcrumbs clearfix">
         <ul>
           <li>
             <a href="#">Главная</a>
