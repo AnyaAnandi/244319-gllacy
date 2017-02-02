@@ -1,0 +1,301 @@
+body {
+	min-width: 1200px; /* ???? ИЛИ НАДО МЕНЬШЕ ЭТОГО ЗАДАВАТЬ КАК В БАРБЕРШОПЕ???*/
+	margin: 0;
+  	padding: 0;
+	font-size: 18px; /* КАК ВЫБИРАЮТ ШРИФТ ДЛЯ BODY??? ТОТ РАЗМЕР КОТОРЫЙ ЧАЩЕ ВСЕГО???*/
+	line-height: 22px;
+	color: #ffffff; /* ПО МОЕМУ МНЕНИЮ ЭТОГО ЦВЕТА БОЛЬШЕ НА СТРАНИЦЫ*/
+	background-color: #849d8f; /* ЧТО БЫ БЫЛО ВИДНО ЦВЕТ ШРИФТА*/
+	font-weight: bold;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+.main a {
+	font-size: 16px; 
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.main .active {
+	color: #323232;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sub-menu a {
+	font-size: 14px; 
+	line-height: 16px;
+	color: #323232;
+	text-decoration: none;
+}
+
+.sub-menu .active {	
+	font-size: 14px; 
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.sub-menu li,
+.sub-menu a {
+	color: #323232;
+	font-weight: normal;
+}
+
+.slider h2 {
+	font-size: 60px; 
+	line-height: 60px;
+}
+
+.promo h2 {
+	font-size: 35px; 
+	line-height: 41px;
+}
+
+.promo p {
+	font-size: 18px; 
+	line-height: 22px;
+}
+
+.promo .btn {
+	font-size: 18px; 
+	line-height: 24px;
+}
+
+.sliders .btn {
+	font-size: 32px; 
+	line-height: 44px;
+}
+
+.products h3 {
+	font-size: 16px; 
+	line-height: 22px;
+}
+
+.shop-description h2,
+.news-and-subsrcribe a {
+	font-size: 24px; 
+	line-height: 30px;
+	color: #323232;
+}
+
+.shop-description p,
+.news-and-subsrcribe h2 {
+	font-size: 16px; 
+	line-height: 22px;
+	color: #323232;
+}
+
+.subscribe-item p {
+	font-size: 16px; 
+	line-height: 22px;
+	font-weight: normal;
+	color: #5a5a5a;
+}
+
+/* СЕТКА INDEX */
+.sub-menu,
+.search-field,
+.login,
+.slider2,
+.slider3,
+.cart  {
+	display: none;
+}
+.main-header {
+	margin-bottom: 0px; /* 324 pxРАССТОЯНИЕ ДО НАДПИСИ КРЕМ-БРЮЛЕ */
+}
+.container {
+	width: 1146px;
+	padding: 0 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-menu-layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo {
+	width: 154px;
+	height: 64px;
+	margin-right: 26px;
+}
+.main-menu {
+	width: 500px; 
+	min-height: 64px;
+}
+.main {
+	display: flex;
+}
+.main li {
+	list-style: none;
+	margin-right: 18px;
+}
+.user-block {
+	width: 261px;
+	min-height: 64px;
+	margin-left: auto;
+	display: flex;
+}
+.user-block a {
+	padding: 0;
+	font-size: 16px;
+	margin-right: 10px; /* ???КАК СЧИАТЬ ОТСТУП - ДО БЛОКА НАРИСОВАННОГО ИЛИ ТЕКСТА??? */
+	margin-top: 15px; /* ??? ЕСЛИ ЭТО НЕ ВКЛЮЧИТЬ, ТО УЕЗЖАЮТ ВВЕРХ ССЫЛКИ */
+}
+.contacts {
+	margin-left: 880px;
+	padding: 0;
+	margin-top: -40px; /* как выравнивать эти элементы*/
+}
+.promo {
+	display: flex;
+	justify-content: space-between;
+}
+.promo-item {
+	width: 560px;
+	min-height: 230px;
+	margin-right: px;
+}
+.promo-title {
+	padding-top: 20px;
+	padding-bottom: 26px;
+	padding-left: 18px;
+}
+.promo p {
+	padding-left: 18px;
+}
+.promo a {
+	padding-left: 374px;
+}
+
+.promo {
+	margin-bottom: 20px;
+}
+.products,
+.shop-description,
+.news-and-subsrcribe {
+	margin-bottom: 40px;
+}
+
+.products {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.product-item {
+	width: 267px;
+	min-height: 340px;
+}
+.descriptions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.description {
+	width: 543px;
+	min-height: 88px;
+}
+.news-and-subsrcribe {
+	display: flex;
+}
+.item {
+	width: 560px;
+	min-height: 230px;
+}
+.map {
+	width: 100%;
+}
+
+.main-footer {
+	margin-top: 37px;
+}
+.main-footer-layout {
+	display: flex;
+}
+.footer-social {
+	width: 267px;
+	min-height: 34px;
+	margin-right: 217px;
+}
+.footer-navigation {
+	width: 327px;
+	min-height: 40px;
+}
+.footer-copyright {
+	font-size: 12px;
+	width: 267px;
+	margin-left: auto;
+}
+.footer-navigation {
+	display: flex;
+	flex-wrap: wrap;
+}
+.navigation {
+	width: 150px;
+	min-height: 16px;
+	margin-right: 10px;
+}
+
+/* СЕТКА CATALOG */
+.breadcrumbs ul {
+	display: flex;
+}
+.breadcrumbs li {
+	list-style: none;
+	margin-right: 10px;
+}
+.catalog-title {
+	margin-top: 10px;
+}
+.search-criteria {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+.sort {
+	width: 193px;
+	min-height: 60px;
+	margin-right: 15px;
+
+}
+.range-filter{ 
+	width: 218px;
+	min-height: 60px;
+	margin-right: 15px;
+}
+.fat {
+	width: 414;
+	min-height: 60px;
+}
+.filler {
+	width: 702px;
+	min-height: 60px; 
+	margin-right: 15px;
+	margin-top: 18px;
+}
+.btn-search {
+	width: 143px;
+	min-height: 60px;
+	margin-top: 18px;
+}
+.pagination {
+	margin-top: 80px;
+	display: flex;
+	justify-content: flex-end;
+}
+.pagination li {
+	list-style: none;
+	margin-right: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
