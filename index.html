@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">    
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style1.css" rel="stylesheet">
+
   </head>
   <body>
 
   	<header class="main-header">
-  		<div class="main-menu-layout container clearfix"> <!--ЦЕНТРОВЩИК-->
+  		<div class="main-menu-layout container"> <!--ЦЕНТРОВЩИК-->
   			
   			<div class="logo">
   				<img src="img/logo.png" width="154" height="64" alt="GllacyShop">
@@ -16,42 +19,46 @@
 
   			<nav class="main-menu">
    				<ul class="main">
-  					<li><a class="active" href="#">Каталог</a>
+  					<li><a class="main-link" href="#"><span class="underline">Каталог</span></a>
   						<ul class="sub-menu">
-  							<li class="active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
-  							<li><a href="#">Сливочное</a></li>
-  							<li><a href="#">Щербеты</a></li>
-  							<li><a href="#">Фруктовый лёд</a></li>
-  							<li><a href="#">Мелорин</a></li>
+  							<li class="sub-active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
+  							<li><a class="sub-link" href="#">Сливочное</a></li>
+  							<li><a class="sub-link act" href="#">Щербеты</a></li>
+  							<li><a class="sub-link" href="#">Фруктовый лёд</a></li>
+  							<li><a class="sub-link" href="#">Мелорин</a></li>
   						</ul>
             </li>
-  					<li><a  href="#">Доставка и оплата</a></li>
-  					<li><a  href="#">О Компании</a></li>
+  					<li><a class="main-link"  href="#"><span class="underline">Доставка и оплата</span></a></li>
+  					<li><a  class="main-link" href="#"><span class="underline">О Компании</span></a></li>
   				</ul>
   			</nav>
 
-  			<div class="user-block clearfix">
+  			<div class="user-block">
 
-          <a href="#">Знак лупы</a> <!--УБРАТЬ ПОСЛЕ CSS -->
+          <button class="sprite loupe">
   				<form class="search" action="https://echo.htmlacademy.ru" method="post">            
   					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
-  				</form>
+  				</form> 
+          </button>
 
-          <a href="#">Вход</a> <!--УБРАТЬ ПОСЛЕ CSS -->
+          <div class="sprite enter"><span class="enter-label">Вход</span>
+          
   				<form class="login" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="e-mail" placeholder="Электронная почта">
-  					<input type="password" name="password" placeholder="Пароль">
-  					<a class="login" href="#">Войти</a>
-  					<a class="login-reminder" href="#">Забыли пароль?</a>
-  					<a class="btn registration" href="#">Новая Регистрация</a>
+            <input class="e-mail" type="text" name="e-mail" placeholder="Электронная почта">
+  					<input class="password" type="password" name="password" placeholder="Пароль">
+  					<a class="btn login-link" href="#">Войти</a>
+  					<a class="login-reminder" href="#"><span class="underline">Забыли пароль?</span></a>
+  					<a class="registration" href="#"><span class="underline">Новая Регистрация</span></a>
   				</form>
+  				</div>
 
-          <a class="cart-empty" href="#">Пусто</a>
+          <div class="sprite cart-empty"><span class="cart-empty-label">Пусто</span>
           <div class="cart">
-  					
-            <!--ПУСКАЯ КОЗИНА - ДЕЛАЕМ ЧЕРЕЗ CSS-->  					 				
+  				   					 				
   				</div>	
+  				</div>
    			</div>
+
         <div class="contacts">
           <p>с 10 до 20, ежедневно</p>
           <p>8 812 450-25-25</p>
@@ -103,14 +110,14 @@
   			
   		</section>
 
-  		<section class="promo clearfix">
-  			<div class="promo-item">
+  		<section class="promo">
+  			<div class="promo-item rasberry">
   				<h2 class="promo-title">Малинка даром!</h2>
   				<p class="promo">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="btn promo" href="#">Хочу варенье!</a>
    			</div>
 
-  			<div class="promo-item">
+  			<div class="promo-item chokolate">
   				<h2 class="promo-title">Шоколадки даром!</h2>
   				<p class="promo">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
   				<a class="btn promo" href="#">Хочу шоколадки!</a>

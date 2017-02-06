@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси</title>
+    <title>Глейси - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">    
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style1.css" rel="stylesheet">
   </head>
   <body>
@@ -18,58 +20,66 @@
 
   			<nav class="main-menu">
    				<ul class="main">
-  					<li>
-              <a href="#">Каталог</a>
+  					<li> 
+              <a class="main-link active" href="#">Каталог</a>
+              <!--
   						  <ul class="sub-menu">
-    							<li>Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
-    							<li><a href="#">Сливочное</a></li>
-    							<li><a href="#">Щербеты</a></li>
-    							<li><a href="#">Фруктовый лёд</a></li>
-    							<li><a href="#">Мелорин</a></li>
+    							<li class="sub-active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ --
+    							<li><a class="sub-link" href="#">Сливочное</a></li>
+    							<li><a class="sub-link" href="#">Щербеты</a></li>
+    							<li><a class="sub-link" href="#">Фруктовый лёд</a></li>
+    							<li><a class="sub-link" href="#">Мелорин</a></li>
   						  </ul>
+                -->
             </li>
-  					<li><a href="#">Доставка и оплата</a></li>
-  					<li><a href="#">О Компании</a></li>
+  					<li><a class="main-link" href="#"><span class="underline">Доставка и оплата</span></a></li>
+  					<li><a class="main-link" href="#"><span class="underline">О Компании</span></a></li>
   				</ul>
   			</nav>
 
-  			<div class="user-block clearfix">
-          <a href="#">Знак лупы</a> <!--УБРАТЬ ПОСЛЕ CSS -->
+  			<div class="user-block">
+          
+          <button class="sprite loupe">
   				<form class="search" action="https://echo.htmlacademy.ru" method="post">            
   					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
           </form>
+          </button>
 
-          <a href="#">Вход</a> <!--УБРАТЬ ПОСЛЕ CSS -->
-  				<form class="login" action="https://echo.htmlacademy.ru" method="post">
-  					<input type="text" name="e-mail" placeholder="Электронная почта">
-  					<input type="password" name="password" placeholder="Пароль">
-  					<a class="btn login" href="#">Войти</a>
-  					<a class="btn login-reminder" href="#">Забыли пароль?</a>
-  					<a class="btn registration" href="#">Новая Регистрация</a>
-  				</form>
+          <div class="sprite enter"><span class="enter-label">Вход</span>
+          
+          <form class="login" action="https://echo.htmlacademy.ru" method="post">
+            <input class="e-mail" type="text" name="e-mail" placeholder="Электронная почта">
+            <input class="password" type="password" name="password" placeholder="Пароль">
+            <a class="btn login-link" href="#">Войти</a>
+            <a class="login-reminder" href="#"><span class="underline">Забыли пароль?</span></a>
+            <a class="registration" href="#"><span class="underline">Новая Регистрация</span></a>
+          </form>
+          </div>
 
-          <a class="cart-with-item" href="#">2 товара</a>
+          <div class="sprite cart-with-item"><span class="cart-with-item-label">2 товара</span>
+
   				<div class="cart">
-                
             <table>
   						<tr>
-  							<td>X</td>
-  							<td><img src="img/small-ice-cart1.png" width="33" height="33">
-  							<td>Пломбир с апельсиновым джемом</td>
-  							<td>1,5кг Х 200 руб.</td>
+  							<td class="cross"></td>
+  							<td class="ice-small"><img src="img/small-ice-cart1.png" width="33" height="33">
+  							<td class="ice-name">Пломбир с апельсиновым джемом</td>
+  							<td class="price-calculate">1,5кг Х 200 руб.</td>
   							<td>300 руб.</td>
   						</tr>
   						<tr>
-  							<td>X</td>
-  							<td><img src="img/small-ice-cart2.png" width="33" height="33">
-  							<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-  							<td>1,5кг Х 300 руб.</td>
+  							<td class="cross"></td>
+  							<td class="ice-small"><img src="img/small-ice-cart2.png" width="33" height="33">
+  							<td class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+  							<td class="price-calculate">1,5кг Х 300 руб.</td>
   							<td>450 руб.</td>
   						</tr>
   					</table>
-  					<p>Итого: 750 руб.</p>
+  					<p class="total-price">Итого: 750 руб.</p>
   					<a class="btn order" href="#">Оформить заказ</a>
   				</div>
+
+          </div>
           
    			</div>
 
