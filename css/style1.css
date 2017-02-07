@@ -38,20 +38,7 @@ body {
 	line-height: 60px;
 }
 
-.promo h2 {
-	font-size: 35px; 
-	line-height: 41px;
-}
 
-.promo p {
-	font-size: 18px; 
-	line-height: 22px;
-}
-
-.promo .btn {
-	font-size: 18px; 
-	line-height: 24px;
-}
 
 .sliders .btn {
 	font-size: 32px; 
@@ -102,7 +89,7 @@ body {
 
 .container {
 	width: 1146px;
-	padding: 0 10px;
+	padding: 0 27px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -129,8 +116,6 @@ body {
 	color: #ffffff;
 	margin-top: 23px;
 	text-decoration: none;
-	/* text-decoration: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .main-menu ul {
@@ -231,7 +216,9 @@ a.act {
 	display: flex;
 }
 
-.main .underline {
+.main .underline,
+.product-item .underline,
+.navigation .underline {
 	border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -250,6 +237,7 @@ a.act {
 }
 
 .loupe {
+	position: relative;
 	width: 32px;
 	height: 32px;
 	font-size: 0;
@@ -272,8 +260,8 @@ a.act {
 	height: 84px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
-	right: 330px;
-	top: 70px;
+	right: 0px;
+	top: 35px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4) ;
 }
 .search-field {
@@ -298,6 +286,7 @@ a.act {
 }
 
 .enter {
+	position: relative;
 	width: 92px;
 	height: 32px;
 	margin-right: 10px;
@@ -327,8 +316,8 @@ a.act {
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4) ;
-	top: 70px;
-	right: 228px;
+	top: 35px;
+	right: 0px;
 }
 
 .e-mail,
@@ -398,6 +387,13 @@ a.act {
 .registration:active {
 	color: #e84d37;
 }
+.login-reminder:hover .underline,
+.registration:hover .underline,
+.login-reminder:active .underline,
+.registration:active .underline  {
+	border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+} 
+
 
 .enter:hover {
 	background-color: #f8f7f4;
@@ -431,6 +427,7 @@ a.act {
 } /* ??? или здесь вобще не надо наведение */
 
 .cart-with-item {
+	position: relative;
 	width: 117px;
 	height: 32px;
 	background-color: #f8f7f4;
@@ -462,8 +459,8 @@ a.act {
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4) ;
-	top: 70px;
-	right: 100px;
+	top: 35px;
+	right: 0px;
 	color: #323232;
 	font-size: 13px;
 	lign-height: 16px;
@@ -535,47 +532,66 @@ table {
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
+	margin-top: 60px;
+
+
 }
 .promo-item {
 	width: 560px;
 	min-height: 230px;
-	margin-right: px;
+	position: relative;
+	
 }
 
 .rasberry {
 	background-image: url("../img/raspberry-bg.jpg");
 	background-repeat: no-repeat;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 
 .chokolate {
 	background-image: url("../img/chocolate-bg.jpg");
 	background-repeat: no-repeat;
-	border-radius: 15px;
+	border-radius: 20px;
 }
 
-/*
-.promo-title {
-	padding-top: 20px;
-	padding-bottom: 26px;
-	padding-left: 18px;
+.promo h2 {
+	font-size: 35px; 
+	line-height: 41px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	padding-top: 18px;
+	padding-left: 20px;
 }
+
 .promo p {
-	padding-left: 18px;
-}
-.promo a {
-	padding-left: 374px;
+	font-size: 18px; 
+	line-height: 22px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 20px;
 }
 
-.promo {
-	margin-bottom: 20px;
+.promo-btn  {
+	position: absolute;
+	font-size: 18px; 
+	line-height: 24px;
+	width: 165px;
+	height: 35px;
+	padding-top: 11px;
+	bottom: 22px;
+	right: 22px;
 }
-*/
+
+
 
 .products,
 .shop-description,
 .news-and-subsrcribe {
-	margin-top: 40px; /* убрать */
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -585,29 +601,210 @@ table {
 	flex-wrap: wrap;
 }
 .product-item {
+	position: relative;
 	width: 267px;
 	min-height: 340px;
+}
+.hit {
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-position: -10px -329px;;
+
+}
+.product-img {
+	border-radius: 160px;
+}
+
+.product-item b {
+	position: absolute;
+	font-size: 40px; /* не показывает фотошоп */
+	line-height: 45px;
+	bottom: 115px;
+}
+
+.product-item h3 a {
+	display: block;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+.product-item a:hover,
+.product-item a:active,
+.navigation:hover,
+.navigation:active {
+	color: #ffbc9e;
+}
+.product-item a:hover .underline,
+.product-item a:active .underline,
+.navigation:hover .underline,
+.navigation:active .underline {
+	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.shop-description {
+	position: relative;
+	background-image: url("../img/waffle-bg.png");
+	border-radius: 20px;
+	height: 306px;
+}
+.shop-description h2 {
+	padding-left: 20px;
+	padding-top: 25px;
 }
 
 .descriptions {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	
 }
-.description {
-	width: 543px;
+.description {	
+	width: 480px;
 	min-height: 88px;
+	margin: 0;
+	padding: 0;
+	margin-left: 80px;
 }
+
+.description-logo {
+	position: absolute;
+	width: 49px;
+	height: 49px;
+}
+.logo1 {
+	top: 94px;
+	left: 20px;
+	background-position: -10px -410px;
+}
+.logo2 {
+	background-position: -10px -531px;
+	left: 20px;
+	top: 184px;
+}
+.logo3 {
+	background-position: -10px -130px;
+	left: 585px;
+	top: 94px;
+}
+.logo4 {
+	background-position: -10px -780px;
+	top: 184px;
+	left: 585px;
+}
+
+
+
+
+
 .news-and-subsrcribe {
 	display: flex;
+	justify-content: space-between;
+	padding: 0;
 }
 .item {
 	width: 560px;
-	min-height: 230px;
+	height: 220px;
+	position: relative;
 }
+
+.news {
+	background-image: url("../img/news-strawberry-bg.jpg");
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}
+.news h2 {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.news-link {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 287px;
+	margin-left: 20px;
+}
+.subscribe {
+	position: relative;
+	background-color: #f8f7f4;
+	background-image: url("../img/letter-patern.png");
+	border-radius: 20px;
+	margin: 0;
+	padding: 0;
+}
+.subscribe p {
+	color: #5a5a5a;
+	padding-left: 20px;
+}
+.white-background {
+	position: absolute;
+	width: 548px;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f7f4;
+	border-radius: 20px;
+	top: 6px;
+	right: 6px;
+}
+
+.subscribe .e-mail {
+	width: 368px;
+	top: 131px;
+	right: 140px;
+}
+
+/* какя то кривая кнопка выходит */
+.subscribe-btn {
+	position: absolute;
+	width: 128px;
+	height: 43px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	left: 430px;
+	top: 131px;
+}
+.adress {
+	position: absolute;
+	width: 279px;
+	height: 282px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 26px;
+	right: 100px;
+	top: 2690px;
+	
+   }
+.adress span {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.connection-form {
+	position: absolute;
+	width: 251px;
+	height: 33px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	padding-top: 10px;
+	bottom: 31px;
+}
+
 .map {
 	width: 100%;
 }
+
 
 .main-footer {
 	margin-top: 37px;
@@ -619,25 +816,60 @@ table {
 	width: 267px;
 	min-height: 34px;
 	margin-right: 217px;
+
+}
+
+.social-btn {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	font-size: 0;
+	border-radius: 50px;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	margin-left: 12px;
+}
+
+
+.social-btn-tw {
+background-position: -10px -849px;
+}
+
+.social-btn-in {
+	background-position: -10px -479px;
+}
+.social-btn-fb {
+	background-position: -10px -277px;
+}
+.social-btn-vk {
+	background-position: -10px -901px;
 }
 .footer-navigation {
-	width: 327px;
+	width: 400px;
 	min-height: 40px;
 }
 .footer-copyright {
 	font-size: 12px;
-	width: 267px;
+	width: 194px;
 	margin-left: auto;
 }
 .footer-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	
 }
 .navigation {
-	width: 150px;
-	min-height: 16px;
-	margin-right: 10px;
+	display: block;
+	width: 180px;
+	margin: 0;
+	font-size: 13px;
+	line-height: 18px;
+	color: #ffffff;
+	padding: 0;
+	text-decoration: none;
 }
+
+
+
 
 /* СЕТКА CATALOG */
 .breadcrumbs ul {
