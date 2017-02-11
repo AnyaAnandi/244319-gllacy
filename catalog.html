@@ -10,7 +10,7 @@
   <body>
 
   	<header class="main-header">
-  		<div class="main-menu-layout container clearfix"> <!--ЦЕНТРОВЩИК-->
+  		<div class="main-menu-layout container"> 
   			
   			<div class="logo">
   				<a href="index.html">
@@ -21,10 +21,10 @@
   			<nav class="main-menu">
    				<ul class="main">
   					<li> 
-              <a class="main-link active" href="#">Каталог</a>
+              <a class="main-link active">Каталог</a>
               <!--
   						  <ul class="sub-menu">
-    							<li class="sub-active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ --
+    							<li class="sub-active">Новинки</li>
     							<li><a class="sub-link" href="#">Сливочное</a></li>
     							<li><a class="sub-link" href="#">Щербеты</a></li>
     							<li><a class="sub-link" href="#">Фруктовый лёд</a></li>
@@ -32,60 +32,64 @@
   						  </ul>
                 -->
             </li>
-  					<li><a class="main-link" href="#"><span class="underline">Доставка и оплата</span></a></li>
-  					<li><a class="main-link" href="#"><span class="underline">О Компании</span></a></li>
+  					<li><a class="main-link under hide" href="#">Доставка и оплата</a></li>
+  					<li><a class="main-link under hide" href="#">О Компании</a></li>
   				</ul>
   			</nav>
 
   			<div class="user-block">
           
-          <button class="sprite loupe">
-  				<form class="search" action="https://echo.htmlacademy.ru" method="post">            
-  					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
-          </form>
-          </button>
+          <form class="loupe" action="https://echo.htmlacademy.ru" method="post">
+               <button class="sprite loupe-btn"></button> 
+             <div class="search">
+            <input class="search-field" type="text" name="search" placeholder="Что ищем?">
+            </div>
+          </form> 
 
+          <div class="enter-padding">
           <div class="sprite enter"><span class="enter-label">Вход</span>
           
           <form class="login" action="https://echo.htmlacademy.ru" method="post">
             <input class="e-mail" type="text" name="e-mail" placeholder="Электронная почта">
             <input class="password" type="password" name="password" placeholder="Пароль">
             <a class="btn login-link" href="#">Войти</a>
-            <a class="login-reminder" href="#"><span class="underline">Забыли пароль?</span></a>
-            <a class="registration" href="#"><span class="underline">Новая Регистрация</span></a>
+            <a class="login-reminder under black" href="#">Забыли пароль?</a>
+            <a class="registration under black" href="#">Новая Регистрация</a>
           </form>
           </div>
+          </div>
 
+          <div class="cart-with-item-padding">
           <div class="sprite cart-with-item"><span class="cart-with-item-label">2 товара</span>
 
-  				<div class="cart">
+  				  <div class="cart">
             <table>
   						<tr>
   							<td class="cross"></td>
   							<td class="ice-small"><img src="img/small-ice-cart1.png" width="33" height="33">
   							<td class="ice-name">Пломбир с апельсиновым джемом</td>
-  							<td class="price-calculate">1,5кг Х 200 руб.</td>
-  							<td>300 руб.</td>
+  							<td class="price-calculate">1,5кг х 200 руб.</td>
+  							<td class="total-calculate">300 руб.</td>
   						</tr>
   						<tr>
   							<td class="cross"></td>
   							<td class="ice-small"><img src="img/small-ice-cart2.png" width="33" height="33">
   							<td class="ice-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-  							<td class="price-calculate">1,5кг Х 300 руб.</td>
-  							<td>450 руб.</td>
+  							<td class="price-calculate">1,5кг х 300 руб.</td>
+  							<td class="total-calculate">450 руб.</td>
   						</tr>
   					</table>
   					<p class="total-price">Итого: 750 руб.</p>
   					<a class="btn order" href="#">Оформить заказ</a>
-  				</div>
-
+  				  </div>
+          </div>
           </div>
           
    			</div>
 
    			<div class="contacts">
   				<p>с 10 до 20, ежедневно</p>
-  				<p>8 812 450-25-25</p>
+  				<p class="phone">8 812 450-25-25</p>
   			</div>
 
   		</div>
@@ -93,69 +97,78 @@
 
     <main class="container">
 
-      <div class="breadcrumbs clearfix">
+      <div class="breadcrumbs">
         <ul>
           <li>
-            <a href="#">Главная</a>
+            <a class="breadcrumbs-link under white main-page" href="#">Главная</a>
           </li>
           <li>
-            <a href="#">Каталог</a>
+            <a class="breadcrumbs-link under white" href="#">Каталог</a>
           </li>
-          <li>Сливочное</li>
+          <li>
+          <a class="breadcrumbs-link milky">Сливочное</a></li>
         </ul>
       </div>
 
       <h2 class="catalog-title">Сливочное мороженое</h2>
 
-      <form class="search-criteria clearfix" action="https://echo.htmlacademy.ru" method="post">
+      <form class="search-criteria" action="https://echo.htmlacademy.ru" method="post">
         
         <div class="sort">
           <label for="sort-by">Сортировка:</label>
           <select id="sort-by" name="theme">
-            <option value="popular">по популярности</option>
+            <option class="sort-category" value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
             <option value="fat">по жирности</option>
           </select>
         </div>
 
-        <div class="range-filter">
-        <!--??? НАМ ЖЕ НУЖНО ТОЛЬКО ПОЛЗУНКИ ЗДЕСЬ КРАСИВЫЕ ВОТКНУТЬ? БЛОК ГДЕ ЦЕНУ ОФОРМЛЯЮТ НА УРОКЕ НЕ НАДО ЖЕ???
-        И ЗАГОЛОВОК "цЕНА..." ПРАВИЛЬНО ЧЕРЕЗ Р  ??? И ТАК И НАДО ПУСТЫЕ ДИВЫ?ЫЫ-->
+        <div class="filter-range">
+          
+          <div class="filter-range-title">Цена:</div>
 
-          <p>Цена: 100 руб. - 500 руб.</p>
-          <p> ползунок через css</p><!--УБРАТЬ ПОСЛЕ CSS!!! -->
-            <div class="range-controls">
-                <div class="scale">
-                  <div style="margin-left:50px;width:100px;" class="bar">
-                  </div>
-                </div>
-                <div class="toggle min-toggle">
-                </div>
-                <div class="toggle max-toggle">
-                </div>
-            </div>
+          <div class="price-controls">
+            <label class="min-price">  
+            <input type="text" name="min-price" value="100">
+            руб. - 
+            </label>
+            <label class="max-price">
+            <input type="text" name="max-price" value="500">
+            руб.
+            </label>        
+          </div>
+
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+       
         </div>
 
         <fieldset class="fat">
           <legend>Жирность:</legend>
-            
+           <div class="fat-range">
             <input id="zero" name="zero" type="radio">
             <label for="zero">0%</label> 
 
             <input id="ten" name="ten" type="radio" checked>
-            <lavel for="ten">до 10%</label>        
+            <label for="ten">до 10%</label>        
             
             <input id="thirty" name="thirty" type="radio"> 
             <label for="thirty">до 30%</label>
             
             <input id="up-thirty" name="fatness" type="radio"> 
             <label for="up-thirty">выше 30%</label>
+            </div>
         </fieldset>
 
         <fieldset class="filler">
           <legend>Наполнители:</legend>
-          
+          <div class="filler-range">
           <input id="chocolate" name="chocolate" type="checkbox" checked> 
           <label for id="chocolate">шоколадные</label>
 
@@ -170,15 +183,16 @@
 
           <input id="jams" name="jams" type="checkbox"> 
           <label for id="jams">джемы</label>
+          </div>
         </fieldset>
 
         <div class="btn-search">
-          <input class="search-criteria" type="submit" value="Применить">
+          <input class="btn-search-criteria" type="submit" value="Применить">
         </div>
 
       </form>
 
-      <section class="products clearfix">
+      <section class="products">
         <div class="product-item">
           <img class="product-img" src="img/ice1-catalog.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой струшкой">
           <b>310 ₽/кг</b> 
@@ -250,23 +264,33 @@
           <b>420 ₽/кг</b> 
           <h3><a href="#"><span class="underline">Сливочно с мятным сиропом</span></a></h3>
         </div>
+
+
+
       </section>
 
         <ul class="pagination">
           <li>
-            <span>1</span>
+            <a class="catalog-page prev">Начало</a>
+          </li>
+
+          <li>
+            <a class="catalog-page active">1</a>
           </li>
           <li>
-            <a class="btn catalog-page" href="#">2</a>
+            <a class="catalog-page" href="#">2</a>
           </li>
           <li>
-            <a class="btn catalog-page" href="#">3</a>
+            <a class="catalog-page" href="#">3</a>
           </li>
           <li>
-            <a class="btn catalog-page" href="#">4</a>
+            <a class="catalog-page" href="#">4</a>
           </li>
           <li>
-            <a class="btn catalog-page" href="#">5</a>
+            <a class="catalog-page" href="#">5</a>
+          </li>
+          <li>
+            <a class="catalog-page next">Конец</a>
           </li>
         </ul>
 
@@ -275,7 +299,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer-layout container clearfix">
+      <div class="main-footer-layout container">
         <div class="footer-social">
           <a class="social-btn sprite social-btn-tw" title="Twitter" href="#">Twitter</a>
           <a class="social-btn sprite social-btn-in" title="Instagram" href="#">Instagram</a>
@@ -283,20 +307,30 @@
           <a class="social-btn sprite social-btn-vk" title="VKontakte" href="#">VK</a>
         </div>
 
-        <div class="footer-navigation clearfix">
-          <a class="navigation" href="#"><span></span> Для поставщиков</a>
-          <a class="navigation" href="#">Наши документы</a>
-          <a class="navigation" href="#">О производстве</a>         
-          <a class="navigation" href="#">Экологические стандарты</a>
+        <div class="footer-navigation">
+        <ul class="navigation">
+          <li class="navigation-link">
+          <a  class="footer-nav under white heart" href="#">Для поставщиков</a>
+          </li>
+          <li class="navigation-link">
+          <a  class="footer-nav under white" href="#">Наши документы</a>
+          </li>
+          <li class="navigation-link">
+          <a  class="footer-nav under white"href="#">О производстве</a>
+          </li>
+          <li class="navigation-link">          
+          <a  class="footer-nav under white" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
         </div>
 
         <div class="footer-copyright">
-          <div class="logo">
+          <div class="footer-logo">
             <a href="https://htmlacademy.ru">
-              <img src="img/html-logo.png" width="108" height="38" alt="HTML Academy">
+             <img src="img/html-logo.png" width="108" height="38" alt="HTML Academy">
             </a>
           </div>
-          <p>Сделано в <a href="https://htmlacademy.ru"> HTML Academy</a> @ 2017</p>              
+          <p>Сделано в <a class="footer-link under white" href="https://htmlacademy.ru"> HTML Academy</a> @ 2017</p>              
             </div>
       </div>
     </footer>   

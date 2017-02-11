@@ -10,105 +10,105 @@
   </head>
   <body>
 
-  	<header class="main-header">
-  		<div class="main-menu-layout container"> <!--ЦЕНТРОВЩИК-->
-  			
-  			<div class="logo">
-  				<img src="img/logo.png" width="154" height="64" alt="GllacyShop">
-  			</div>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
 
-  			<nav class="main-menu">
-   				<ul class="main">
-  					<li><a class="main-link" href="#"><span class="underline">Каталог</span></a>
-  						<ul class="sub-menu">
-  							<li class="sub-active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
-  							<li><a class="sub-link" href="#">Сливочное</a></li>
-  							<li><a class="sub-link act" href="#">Щербеты</a></li>
-  							<li><a class="sub-link" href="#">Фруктовый лёд</a></li>
-  							<li><a class="sub-link" href="#">Мелорин</a></li>
-  						</ul>
+    <div class="site-wrapper">
+      <div class="container">
+
+      <header class="main-header">
+      <div class="main-menu-layout"> 
+        
+        <div class="logo">
+          <img src="img/logo.png" width="154" height="64" alt="GllacyShop">
+        </div>
+
+        <nav class="main-menu">
+          <ul class="main">
+            <li><a class="main-link under hide" href="#">Каталог</a>
+              <ul class="sub-menu">
+                <li class="sub-active">Новинки</li> <!--Я ДУМАЮ ЭТО НЕ ССЫЛКА А ЗАГОЛОВОК ПОДМЕНЮ -->
+                <li><a class="sub-link" href="#">Сливочное</a></li>
+                <li><a class="sub-link act" href="#">Щербеты</a></li>
+                <li><a class="sub-link" href="#">Фруктовый лёд</a></li>
+                <li><a class="sub-link" href="#">Мелорин</a></li>
+              </ul>
             </li>
-  					<li><a class="main-link"  href="#"><span class="underline">Доставка и оплата</span></a></li>
-  					<li><a  class="main-link" href="#"><span class="underline">О Компании</span></a></li>
-  				</ul>
-  			</nav>
+            <li><a class="main-link under hide"  href="#">Доставка и оплата</a></li>
+            <li><a  class="main-link under hide" href="#">О Компании</a></li>
+          </ul>
+        </nav>
 
-  			<div class="user-block">
+        <div class="user-block">
 
-          <button class="sprite loupe">
-  				<form class="search" action="https://echo.htmlacademy.ru" method="post">            
-  					<input class="search-field" type="text" name="search" placeholder="Что ищем?">
-  				</form> 
-          </button>
+          
+          <form class="loupe" action="https://echo.htmlacademy.ru" method="post">
+               <button class="sprite loupe-btn"></button> 
+             <div class="search">
+            <input class="search-field" type="text" name="search" placeholder="Что ищем?">
+            </div>
+          </form> 
+           
+          
 
+          <div class="enter-padding">
           <div class="sprite enter"><span class="enter-label">Вход</span>
           
-  				<form class="login" action="https://echo.htmlacademy.ru" method="post">
+          <form class="login" action="https://echo.htmlacademy.ru" method="post">
             <input class="e-mail" type="text" name="e-mail" placeholder="Электронная почта">
-  					<input class="password" type="password" name="password" placeholder="Пароль">
-  					<a class="btn login-link" href="#">Войти</a>
-  					<a class="login-reminder" href="#"><span class="underline">Забыли пароль?</span></a>
-  					<a class="registration" href="#"><span class="underline">Новая Регистрация</span></a>
-  				</form>
-  				</div>
+            <input class="password" type="password" name="password" placeholder="Пароль">
+            <a class="btn login-link" href="#">Войти</a>
+            <a class="login-reminder under black" href="#">Забыли пароль?</a>
+            <a class="registration under black" href="#">Новая Регистрация</a>
+          </form>
+          </div>
+          </div>
 
           <div class="sprite cart-empty"><span class="cart-empty-label">Пусто</span>
           <div class="cart">
-  				   					 				
-  				</div>	
-  				</div>
-   			</div>
+                              
+          </div>  
+          </div>
+        </div>
 
         <div class="contacts">
           <p>с 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
+          <p class="phone">8 812 450-25-25</p>
         </div>
 
       </div>
-
-   			
-
-  		
-  	</header>
-
-  	<main class="container">
-
-  		<section class="sliders">
-
-        <input type="radio" id="point-1" name="point" checked>
-        <input type="radio" id="point-2" name="point">
-        <input type="radio" id="point-3" name="point">
+    
+    </header>
 
         <div class="slider">
-          <div class="slider slider1">
-            <img src="img/ice-cream1-bg.png" width="1045" height="881" alt="Крем брюле и пломбир с малиновым джемом">            <h2 class="slider-title">Крем брюле и пломбир с малиновым джемом</h2>            
-            <a class="btn" href="#">Давайте оба!</a>
+
+          <div class="slide" id="slide1">
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+            <a class="slide-btn btn" href="#">Давайте оба!</a>
           </div>
 
-          
-
-          <div class="slider slider2">
-            <img src="img/ice-cream2-bg.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
-            <h2 class="slider-title">Шоколадный пломбир и лимонный сорбет</h2>
-            <a class="btn" href="#">Давайте оба!</a>
+          <div class="slide" id="slide2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn btn" href="#">Давайте оба!</a>
           </div>
 
-          <div class="slider slider3">
-            <img src="img/ice-cream3-bg.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
-            <h2 class="slider-title">Пломбир с помадкой и клубничный щербет</h2>
-            <a class="btn" href="#">Давайте оба!</a>
+          <div class="slide" id="slide3">
+            <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn btn" href="#">Давайте оба!</a>
           </div>
+
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+
         </div>
 
-        
-
-        <div class="slider-controls">
-          <label for="point-1"></label>
-          <label for="point-2"></label>
-          <label for="point-3"></label>
-        </div>  
-  			
-  		</section>
+      </div>
+   
+  	<main class="container">
 
   		<section class="promo">
   			<div class="promo-item rasberry">
@@ -192,6 +192,10 @@
 	  			</div>
 	  		</div>
 	  	</section>
+	  	</main>
+
+	  	<div class="map-adress">
+
 
 	  	<div class="adress">
           <p>Адрес главного офиса <br>
@@ -206,11 +210,7 @@
           <a class="btn connection-form" href="#">Форма обратной связи</a>
         </div>
       
-    </main>
-
-
-
-	  	<div class="map-adress">
+	  	
 
 	  		<img class="map" src="img/map-and-ponter.jpg" width="1200" height="432" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" 
 	  	</div>
@@ -228,20 +228,31 @@
   				<a class="social-btn sprite social-btn-vk" title="VKontakte" href="#">VK</a>
   			</div>
 
-  			<div class="footer-navigation clearfix">
-  				<a class="navigation" href="#"><span></span> <span class="underline">Для поставщиков</span></a>
-          <a class="navigation right" href="#"><span class="underline">Наши документы</span></a>
-  				<a class="navigation" href="#"><span class="underline">О производстве</span></a>  				
-  				<a class="navigation" href="#"><span class="underline">Экологические стандарты</span></a>
+  			<div class="footer-navigation">
+  			<ul class="navigation">
+  				<li class="navigation-link">
+  				<a  class="footer-nav under white heart" href="#">Для поставщиков</a>
+  				</li>
+  				<li class="navigation-link">
+          <a  class="footer-nav under white" href="#">Наши документы</a>
+          </li>
+          <li class="navigation-link">
+  				<a  class="footer-nav under white"href="#">О производстве</a>
+  				</li>
+  				<li class="navigation-link">  				
+  				<a  class="footer-nav under white" href="#">Экологические стандарты</a>
+  				</li>
+  			</ul>
   			</div>
+  			
 
   			<div class="footer-copyright">
-  				<div class="logo">
+  				<div class="footer-logo">
             <a href="https://htmlacademy.ru">
   					 <img src="img/html-logo.png" width="108" height="38" alt="HTML Academy">
             </a>
   				</div>
-  				<p>Сделано в <a href="https://htmlacademy.ru"> HTML Academy</a> @ 2017</p>          		
+  				<p>Сделано в <a class="footer-link under white" href="https://htmlacademy.ru"> HTML Academy</a> @ 2017</p>          		
            	</div>
   		</div>
   	</footer>  	
@@ -251,5 +262,6 @@
 		<script>
 		.....
 		</script> -->
+   </div>
   </body>
 </html>
