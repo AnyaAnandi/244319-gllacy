@@ -817,11 +817,9 @@ table {
 .product-item {
 	position: relative;
 	width: 267px;
-	min-height: 340px;
-	margin: 0;
+	min-height: 300px;
+	margin-bottom: 20px;
 }
-
-
 
 .hover-block {
 	display: none;
@@ -832,7 +830,8 @@ table {
 	border-radius: 10px;
 	top: -6px;
 	right: -13px;
-	z-index: -1;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+	z-index: 3;
 }
 .hover-button {
 	position: absolute;
@@ -864,6 +863,7 @@ table {
 .product-img {
 	border-radius: 160px;
 	margin: 0;
+	padding: 0;
 
 }
 
