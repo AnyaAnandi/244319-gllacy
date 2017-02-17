@@ -1,5 +1,5 @@
 body {
-	
+	width: 1200px; /* убрать */
 	margin: 0;
   	padding: 0;
 	font-size: 16px; 
@@ -9,44 +9,35 @@ body {
 	font-weight: 500;    
 	font-family: "Roboto", "Arial", sans-serif;
 }
-
 body > input[type="radio"] {
   display: none;
 }
-
 .site-wrapper {
-  
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
-
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
   visibility: hidden;
 }
-
 .site-wrapper::before {
   background-image: url("../img/ice-cream2-bg.png");
 }
-
 .site-wrapper::after {
   background-image: url("../img/ice-cream3-bg.png");
 }
-
 .slider {
   position: relative;
-  padding-top: 270px; /*по макету 324px почему??? */
+  padding-top: 255px; /*по макету 324px почему??? */
   text-align: center;
   color: #ffffff;
   z-index: 10;
 }
-
 .slide {
   display: none;
 }
-
 .slide-title {
   width: 700px;
   margin: 0 auto;
@@ -55,19 +46,17 @@ body > input[type="radio"] {
   font-size: 60px;
   line-height: 62px;
 }
-
 .slide-btn {
   display: inline-block;
-  padding: 12px 50px;
+  padding: 8px 40px;
   font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  font-size: 32px;
+  line-height: 44px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
-
 .btn {
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -76,7 +65,6 @@ body > input[type="radio"] {
   text-decoration: none;
   text-align: center;
 }
-
 .slide-btn:hover,
 .promo-btn:hover,
 .subscribe-btn:hover,
@@ -89,7 +77,6 @@ body > input[type="radio"] {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
-
 .slide-btn:active,
 .promo-btn:active,
 .subscribe-btn:active,
@@ -102,7 +89,6 @@ body > input[type="radio"] {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-
 .slider-controls label {
   display: inline-block;
   width: 17px;
@@ -117,35 +103,28 @@ body > input[type="radio"] {
 .slider-controls label:hover {
 	background-color: rgba(255, 255, 255, 0.4);
 }
-
 #btn-1:checked ~ .site-wrapper #slide1,
 #btn-2:checked ~ .site-wrapper #slide2,
 #btn-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
-
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
 #btn-2:checked ~ .site-wrapper label[for="btn-2"],
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
-
 #btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/ice-cream1-bg.png");
 }
-
 #btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/ice-cream2-bg.png");
 }
-
 #btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/ice-cream3-bg.png");
 }
-
-
 .slider-controls {
   position: absolute;
   bottom: 25px;
@@ -153,14 +132,11 @@ body > input[type="radio"] {
   z-index: 20;
   font-size: 0;
 }
-
-
 /* СЕТКА INDEX */
 .main-header {
 	color: #ffffff;
-	margin-bottom: 0px; /* 324 pxРАССТОЯНИЕ ДО НАДПИСИ КРЕМ-БРЮЛЕ */
+	margin-bottom: 0px; 
 }
-
 .container {
 	position: relative;
 	width: 1146px;
@@ -171,8 +147,8 @@ body > input[type="radio"] {
 .logo {
 	width: 154px;
 	height: 64px;
-	margin-right: 11px;
-	margin-top: 9px;
+	margin-right: 10px;
+	margin-top: 7px;
 }
 .main-menu > li {
 	width: 500px; 
@@ -182,7 +158,6 @@ body > input[type="radio"] {
 .main {
 	display: flex;
 }
-
 .main .main-link {
 	display: inline-block;
 	position: relative;
@@ -191,10 +166,10 @@ body > input[type="radio"] {
 	font-size: 16px; 
 	line-height: 18px;
 	color: #ffffff;
-	margin-top: 23px;
+	margin-top: 19px;
+	margin-right: -1px;
 	text-decoration: none;
 }
-
 a.under:after {
 	content: "";
 	position: absolute;
@@ -208,24 +183,18 @@ a.under:hover:after,
 a.under:active:after {
 	background-color: rgba(255, 188, 158, 0.3);
 }
-
 a.hide:hover:after {
 	display: none;
 }
-
 .main-menu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 }
-
 .main-menu-layout {
 	display: flex;
 	flex-wrap: wrap;
-
 }
-
 .main a.main-link:hover {
 	color: #333333;
 	text-decoration: none;
@@ -234,7 +203,6 @@ a.hide:hover:after {
 	background: #f8f7f4;
 	border-radius: 50px;
 }
-
 .main a.main-link:active {
 	color: #333333;
 	text-decoration: none;
@@ -244,7 +212,6 @@ a.hide:hover:after {
 	border-radius: 50px;
 	box-shadow: inset 0 2px 1px 0 #696969;
 }
-
 .main a.active {
 	color: #ffffff;
 	text-decoration: none;
@@ -253,17 +220,13 @@ a.hide:hover:after {
 	background: #d07058;
 	border-radius: 50px;
 }
-
 .sub-menu {
 	display: none;
 	z-index: 1000;
 }
-
-
 .main > li:hover .sub-menu {
     display: block;
 }
-
 .main li {
 	position: relative;
 }
@@ -278,9 +241,7 @@ a.hide:hover:after {
     border-radius: 5px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4) ;
     z-index: 1000;
-    
 }
-
 .sub-menu a  {
 	display: block;
 	list-style: none;
@@ -296,7 +257,6 @@ a.hide:hover:after {
 	color: #323232;
 	font-weight: normal;
 }
-
 .sub-menu .sub-active {
 	font-weight: 700;
 	margin-right: 9px;
@@ -305,9 +265,8 @@ a.hide:hover:after {
 	padding-left: 20px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* ??? */
-
 }
-a.sub-link:hover {
+a.sub-link:hover:not(.act) {
 	background-color: #fbded7;
 }
 a.sub-link:active {
@@ -316,34 +275,26 @@ a.sub-link:active {
 a.act {
 	background-color: #d07058;
 }
-
 .user-block {
 	width: 261px;
 	min-height: 64px;
 	margin-left: auto;
 	display: flex;
 }
-
-
 .user-block  {
 	display: flex;
-	margin-top: 23px;
+	margin-top: 19px;
 	padding: 0px;
 	text-decoration: none;
-	
 }
-
-
 .sprite {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 }
-
 .loupe {
 	position: relative;
 	z-index: 1000;
 }
-
 .loupe-btn {
 	position: relative;
 	width: 32px;
@@ -356,8 +307,7 @@ a.act {
 	border: none;
 	padding: 10px;
 	box-sizing: border-box;
-	}
-
+}
 .search {
 	display: none;
 	position: absolute;
@@ -404,20 +354,16 @@ a.act {
 	top: 140px;
 	left: 40px;
 }
-
 .search-field:hover {
 	top: 18px;
 	left: 12px;
 	border: 2px solid #9a9a9a;
 }
-
-
 .search-field:focus {
 	border: 2px solid #5b9ddf;
 	font-weight: bold;
 	outline: none;
 } 
-
 .search-field:focus ~ .search-label,
 .e-mail:focus ~ .e-mail-label,
 .password:focus ~ .password-label {
@@ -433,13 +379,11 @@ a.act {
 	top: 110px;
 	left: 40px;
 }
-
 .search-field:focus::-webkit-input-placeholder,
 .e-mail:focus::-webkit-input-placeholder,
 .password:focus::-webkit-input-placeholder {
 	color: transparent
 }
-
 
 .loupe:hover .search {
 	display: block;
@@ -449,10 +393,6 @@ a.act {
 	background-position: -3px -630px;
 }
 /*слетает ховер с кнопки когда переходим на форму ????? */
-
-
-
-
 .enter {
 	position: relative;
 	width: 92px;
@@ -460,7 +400,7 @@ a.act {
 	margin-right: 10px;
 	background-color: rgba(225, 225, 225, 0.2);
 	border-radius: 50px;
-	background-position: 3px -193px;
+	background-position: 6px -193px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
@@ -470,15 +410,12 @@ a.act {
 .enter-padding {
 	position: relative;
 	z-index: 1000;
-
 }
-
 .enter-label {	
 	position: absolute;	
-	margin-left: 42px;
+	margin-left: 44px;
 	margin-top: 8px;
 }
-
 .login {
 	display: none;
 	position: absolute;
@@ -491,9 +428,7 @@ a.act {
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4) ;
 	top: 35px;
 	right: 0px;
-	
 }
-
 .e-mail,
 .password {
 	position: absolute;
@@ -507,37 +442,24 @@ a.act {
 	right: 19px;
 	padding-left: 14px;
 	z-index: 1000;
-
 }
-
-
-
 .e-mail:hover,
 .password:hover {
 	right: 17px;
 	border: 2px solid #9a9a9a;
 }
-
 .e-mail:focus,
 .password:focus {
 	border: 2px solid #2e88e4;
 	font-weight: bold;
 	outline: none;
 }
- {
-	font-size: 11px;
-	line-height: 13px;
-	color: #5b9ddf;
-	top: 3px;
-}
 .e-mail {
 	top: 20px;
-	
 }
 .password {
 	top: 84px;
 }
-
 .login-link{
 	position: absolute;
 	width: 100px;
@@ -548,7 +470,6 @@ a.act {
 	font-size: 18px;
 	line-height: 24px;
 }
-
 .login-reminder,
 .registration {
 	position: absolute;
@@ -558,8 +479,6 @@ a.act {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
-
-
 .login-reminder {
 	top: 148px;
 	left: 139px;
@@ -568,7 +487,6 @@ a.act {
 	top: 168px;
 	left: 139px;
 }
-
 .login-reminder:hover,
 .registration:hover,
 .login-reminder:active,
@@ -576,19 +494,14 @@ a.act {
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
-
-
-
 .enter:hover {
 	background-color: #f8f7f4;
 	color: #323232;
 	background-position: 3px -231px;
 }
-
 .enter-padding:hover .login  {
 	display: block;
 }
-
 .cart-empty {
 	width: 117px;
 	height: 32px;
@@ -609,31 +522,27 @@ a.act {
 	background-color: #f8f7f4;
 	color: #323232;
 } /* ??? или здесь вобще не надо наведение */
-
-
 .cart-with-item {
 	position: relative;
 	width: 117px;
 	height: 32px;
 	background-color: #f8f7f4;
 	border-radius: 50px;
-	background-position: 3px -43px;
+	background-position: 6px -43px;
 }
 .cart-with-item-padding {
 	position: relative;
 	z-index: 1000;
 }
-
 .cart-with-item-label {
 	position: absolute;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
 	color: #323232;
-	margin-left: 46px;
+	margin-left: 43px;
 	margin-top: 8px;
 }
-
 .cart {
 	display: none;
 	position: absolute;
@@ -653,12 +562,10 @@ a.act {
 .cart-with-item:hover {
 	background-color: #f8f7f4;
 }
-
 .cart-with-item-padding:hover .cart {
 	display: block;
 
 }
-
 table {
 	width: auto;
 	height: auto;
@@ -668,9 +575,7 @@ table {
 	border-collapse: separate;
 	border-spacing: 10px;
 	border-bottom: 1px solid #cacac7;
-
 }
-
 .cross {
 	position: relative;
 	background-image: url("../img/cross.svg");
@@ -679,9 +584,7 @@ table {
 	left: 0px;
 	width: 10px;
 	height: 10px;
-	
 }
-
 .ice-name {
 	width: 220px;
 	padding-left: 0px;
@@ -715,17 +618,14 @@ table {
 	right: 14px;
 	bottom: 21px;
 }
-
-
-
 .contacts {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	margin-left: 980px;
+	margin-left: 982px;
 	padding: 0px;
-	padding-top: 10px;
-	margin-top: -30px; 
+	padding-top: 8px;
+	margin-top: -35px; 
 	text-align: end;
 }
 .phone {
@@ -733,57 +633,48 @@ table {
 	line-height: 24px;
 	margin-top: -10px;
 	text-align: end;
-
 }
-
 .promo {
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
-	margin-top: 60px;
-
-
+	margin-top: 42px;
 }
 .promo-item {
 	width: 560px;
 	min-height: 230px;
 	position: relative;
-	
 }
-
 .rasberry {
 	background-image: url("../img/raspberry-bg.jpg");
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-
 .chokolate {
 	background-image: url("../img/chocolate-bg.jpg");
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-
 .promo h2 {
 	font-size: 35px; 
 	line-height: 41px;
 	font-weight: 700;
 	padding: 0;
 	margin: 0;
-	padding-top: 18px;
-	padding-left: 20px;
+	padding-top: 16px;
+	padding-left: 19px;
 }
-
 .promo p {
 	font-size: 18px; 
 	line-height: 22px;
 	font-weight: 700;
 	padding: 0;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 14px;
 	padding-left: 20px;
+	padding-right: 20px;
 }
-
 .promo-btn  {
 	position: absolute;
 	font-size: 18px; 
@@ -791,17 +682,19 @@ table {
 	width: 165px;
 	height: 35px;
 	padding-top: 11px;
-	bottom: 22px;
+	bottom: 24px;
 	right: 22px;
 }
-
+.choko {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .products,
 .shop-description,
 .news-and-subsrcribe {
-	margin-top: 32px;
-	margin-bottom: 40px;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
-
 .products {
 	display: flex;
 	justify-content: space-between;
@@ -812,15 +705,16 @@ table {
 	font-size: 16px; 
 	line-height: 22px;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 0px;
+	padding-left: 5px;
 }
 .product-item {
 	position: relative;
 	width: 267px;
 	min-height: 300px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 }
-
 .hover-block {
 	display: none;
 	position: absolute;
@@ -829,19 +723,20 @@ table {
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 10px;
 	top: -6px;
-	right: -13px;
+	right: -15px;
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-	z-index: 3;
+	z-index: -1;
 }
 .hover-button {
 	position: absolute;
+	font-size: 18px;
+	line-height: 24px;
 	width: 200px;
 	height: 34px;
-	bottom: 20px;
+	bottom: 23px;
 	left: 46px;
 	padding-top: 10px;
 }
-
 .product-item:hover {
 	z-index: 2000;
 }
@@ -852,34 +747,37 @@ table {
 	display: block;
 	z-index: -1;
 }
-
 .hit {
 	position: absolute;
 	width: 61px;
 	height: 61px;
 	background-position: -10px -329px;;
-
 }
 .product-img {
 	border-radius: 160px;
 	margin: 0;
 	padding: 0;
-
 }
-
 .product-item b {
 	position: absolute;
-	font-size: 40px; /* не показывает фотошоп */
+	font-size: 45px; /* не показывает фотошоп */
 	line-height: 45px;
-	bottom: 85px;
+	bottom: 80px;
+	left: 0;
 }
-
+.product-item .kilogram {
+	font-size: 30px;
+	border-bottom: none;
+	margin-left: 5px;
+}
 .product-item h3 /*было а */ {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 	color: #ffffff;
 	text-align: center;
+	margin-top: 5px;
+	padding-left: 10px;
 }
 .product-item span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -895,14 +793,12 @@ table {
 	color: #ffbc9e;
 	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
-
 .shop-description {
 	position: relative;
 	background-image: url("../img/waffle-bg.png");
 	border-radius: 20px;
 	height: 306px;
 }
-
 .shop-description h2,
 .news-and-subsrcribe a {
 	font-size: 24px; 
@@ -915,16 +811,13 @@ table {
 	line-height: 22px;
 	color: #323232;
 }
-
 .shop-description h2 {
 	padding-left: 20px;
 	padding-top: 25px;
 }
-
 .descriptions {
 	display: flex;
 	flex-wrap: wrap;
-	
 }
 .description {	
 	width: 480px;
@@ -933,7 +826,6 @@ table {
 	padding: 0;
 	margin-left: 80px;
 }
-
 .description-logo {
 	position: absolute;
 	width: 49px;
@@ -959,11 +851,6 @@ table {
 	top: 184px;
 	left: 585px;
 }
-
-
-
-
-
 .news-and-subsrcribe {
 	display: flex;
 	justify-content: space-between;
@@ -974,7 +861,6 @@ table {
 	height: 220px;
 	position: relative;
 }
-
 .news {
 	background-image: url("../img/news-strawberry-bg.jpg");
 	background-repeat: no-repeat;
@@ -1006,7 +892,6 @@ table {
 	color: #5a5a5a;
 	padding-left: 30px;
 }
-
 .white-background {
 	position: absolute;
 	width: 548px;
@@ -1018,14 +903,12 @@ table {
 	top: 6px;
 	right: 6px;
 }
-
 .subscribe .e-mail {
 	position: absolute;
 	width: 348px;
 	top: 131px;
 	right: 161px;
 }
-
 .subscribe-btn {
 	position: absolute;
 	/*padding: 10px 20px; */
@@ -1037,9 +920,6 @@ table {
 	right: 21px;
 	top: 131px;
 	border: none;
-}
-.map-adress {
-	
 }
 .map {
 	width: 100%;
@@ -1059,14 +939,12 @@ table {
 	padding-left: 26px;
 	right: 27px;
 	top: 62px;
-	
-   }
+}
 .adress span {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 }
-
 .connection-form {
 	position: absolute;
 	width: 251px;
@@ -1077,13 +955,9 @@ table {
 	padding-top: 10px;
 	bottom: 31px;
 }
-
-
-
-
 .main-footer {
-	margin-top: 37px;
-	margin-bottom: 14px;
+	padding-top: 17px;
+	padding-bottom: 14px;
 }
 .main-footer-layout {
 	display: flex;
@@ -1091,10 +965,8 @@ table {
 .footer-social {
 	width: 267px;
 	min-height: 34px;
-	margin-right: 217px;
-
+	margin-left: 0;
 }
-
 .social-btn {
 	display: inline-block;
 	width: 32px;
@@ -1102,23 +974,20 @@ table {
 	font-size: 0;
 	border-radius: 50px;
 	border: 3px solid rgba(255, 255, 255, 0.5);
-	margin-left: 12px;
+	margin-left: 0px;
+	margin-right: 7px;
 	opacity: 0.8;
 }
 .social-btn:hover{
 	opacity: 1;
-	
 }
-
 .social-btn:active {
 	opacity: 1;
 	box-shadow: inset 0 2px 1px 0 #696969;
 }
-
 .social-btn-tw {
 background-position: -10px -849px;
 }
-
 .social-btn-in {
 	background-position: -10px -479px;
 }
@@ -1128,15 +997,13 @@ background-position: -10px -849px;
 .social-btn-vk {
 	background-position: -10px -901px;
 }
-
-
 .footer-navigation {
 	width: 334px;
 	margin: 0;
 	padding: 0;
-	
+	margin-left: 155px;
+	margin-top: -5px;
 }
-
 .navigation {
 	list-style: none;
 	display: flex;
@@ -1150,8 +1017,6 @@ background-position: -10px -849px;
 .footer-nav {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-
 .navigation-link:nth-child(2n) {
 	width: 164px;
 	margin-left: 30px;
@@ -1159,6 +1024,7 @@ background-position: -10px -849px;
 a.footer-nav {
 	position: relative;
 	font-size: 13px;
+	line-height: 16px;
 	text-decoration: none;
 	font-size: 400;
 	color: #ffffff;
@@ -1168,7 +1034,6 @@ li:first-child a.footer-nav{
 	font-weight: bold;
 	position: relative;
 }
-
 .navigation a.heart:before {
 	content: "";
 	display: block;
@@ -1176,42 +1041,38 @@ li:first-child a.footer-nav{
 	height: 13px;
 	position: absolute;
 	background-image: url("../img/heart-icon.png");
-	top: 0;
-	left: -20px;
+	top: 2px;
+	left: -22px;
 }
-
 .footer-copyright {
 	position: relative;
 	font-size: 12px;
-	width: 194px;
+	width: 204px;
 	margin-left: auto;
-	
 }
 .footer-logo {
 	position: absolute;
 	top: -15px;
-
+	left: 10px;
 }
 .footer-copyright p {
 	position: absolute;
-	
-	top: 10px;
+	top: 13px;
+	font-weight: normal;
+	left: 10px;
 }
 .footer-link {
 	color: #ffffff;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-
-
 /* СЕТКА CATALOG */
 .breadcrumbs {
-	margin-left: -40px; /* ??? почему так */
+	margin-left: -38px; /* ??? почему так */
 }
 .breadcrumbs ul {
 	display: flex;
-	margin-top: -40px;
+	margin-top: -44px;
 }
 .breadcrumbs li {
 	
@@ -1221,7 +1082,6 @@ li:first-child a.footer-nav{
 	margin-right: 20px;
 	position: relative;
 }
-
 .breadcrumbs-link {
 	position: relative;
 	font-size: 14px;
@@ -1239,7 +1099,6 @@ li:first-child a.footer-nav{
 	color: #ffffff;
 	border-bottom: none;
 }
-
 .main-page:before {
 	content: "";
 	position: absolute;
@@ -1284,7 +1143,6 @@ li:first-child a.footer-nav{
 	bottom: 6px;
 	left: -10px;
 }
-
 .milky:before {
 	content: "";
 	position: absolute;
@@ -1307,7 +1165,6 @@ li:first-child a.footer-nav{
 	bottom: 6px;
 	left: -13px;
 }
-
 .empty-link:before {
 	content: "";
 	position: absolute;
@@ -1330,14 +1187,12 @@ li:first-child a.footer-nav{
 	bottom: -14px;
 	left: -103px;
 }
-
-
 .catalog-title {
 	font-size: 35px;
 	line-height: 41px;
 	padding: 0;
 	padding: 0;
-	margin-top: 10px;
+	margin-top: -14px;
 }
 .search-criteria {
 	display: flex;
@@ -1347,9 +1202,13 @@ li:first-child a.footer-nav{
 	position: relative;
 	width: 193px;
 	height: 60px;
-	margin-right: 15px;
-	margin-top: 5px;
-
+	margin-right: 12px;
+	margin-top: -4px;
+}
+.sort label {
+	position: absolute;
+	top: 1px;
+	left: 16px;
 }
 .sort label,
 .fat legend,
@@ -1357,8 +1216,6 @@ li:first-child a.footer-nav{
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	margin-left: 20px;
-	padding-top: 5px;
 }
 .sort select {
 	position: absolute;
@@ -1370,31 +1227,24 @@ li:first-child a.footer-nav{
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	color: #ffffff;
-	padding-left: 20px;
+	padding-left: 13px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 600px;
 }
-/* почему не меняется цвет всего селекта и жирность текста*/
 .sort select:hover {
 	background-color: #ffffff;
 	color: #323232;
-
-}
-
-.range-filter { 
-	width: 218px;
-	min-height: 60px;
-	margin-right: 15px;
 }
 .fat {
+	position: relative;
 	border: none;
 	position: relative;
 	margin-bottom: 20px;
 }
 .fat-range {
 	position: absolute;
-	width: 414px;
+	width: 394px;
 	height: 21px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
@@ -1402,38 +1252,41 @@ li:first-child a.footer-nav{
 	padding-bottom: 10px;
 	padding-left: 20px;
 	left: 0;
+	top: 20px;
+}
+.fat legend {
+	position: absolute;
+	top: -2px;
+	left: 12px;
 }
 .fat label,
 .filler label,
 .btn-search-criteria {
 	font-size: 16px;
 	line-height: 18px;
-	margin-right: 19px;
+	margin-right: 10px;
 	font-weight: 450;
 }
-
 input[type="radio"] {
 	display: none;
 } 
-
-
 input[type="radio"] + label {
   display: inline-block;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding-left: 33px;
+  padding-top: 4px;
   color: #ffffff;
   cursor: pointer;
 }
 input[type="radio"] + label:before {
   content: "";
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   border: 1px solid #ffffff;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 2px;
+  top: 4px;
   border-radius: 50px;
 }
 input[type="radio"] + label:hover:before,
@@ -1447,19 +1300,19 @@ input[type="radio"]:checked + label:hover:after {
 	left: 6px;
 	left: 5px;
 }
-
 input[type="radio"]:disabled + label:before,
 input[type="checkbox"]:disabled + label:hover:before {
 	opacity: 0.4;
 }
-
 /* доделать спарйт */
 input[type="checkbox"]:checked + label:hover:before {
+	display: block;
 	background-image: url("../img/checked-checkbox-active.png");
 	background-repeat: no-repeat;
 	position: 100% 100%;
+	top: 0px;
+	left: 0;
 }
-
 input[type="radio"]:checked + label:after {
 	content: "";
     display: block;
@@ -1482,22 +1335,22 @@ input[type="radio"]:checked + label:before {
   top: 0;
   border-radius: 50px;
 }
-
 .filler {
 	position: relative;
 	width: 702px;
 	min-height: 60px; 
 	margin-right: 15px;
-	margin-top: 15px;
+	margin-top: 14px;
 	margin-bottom: 10px;
 	border: none;
 }
 .filler legend {
-	margin-left: 10px;
+	margin-left: 3px;
+	padding-top: 3px;
 }
 .filler-range {
 	position: absolute;
-	width: 702px;
+	width: 682px;
 	height: 21px;
 	margin: 0;
 	padding: 0;
@@ -1514,7 +1367,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
   display: inline-block;
   position: relative;
-  padding-left: 30px;
+  padding-left: 36px;
   margin-bottom: 20px;
   color: #ffffff;
   cursor: pointer;
@@ -1526,7 +1379,7 @@ input[type="checkbox"] + label:before {
   height: 19px;
   border: 1px solid #ffffff;
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 0;
   border-radius: 5px;
 }
@@ -1534,17 +1387,16 @@ input[type="checkbox"]:checked + label:before {
   border: none;
   width: 25px;
   height: 25px;
-  background-image: url("../img/sprite.png");
-  background-position: -10px -90px;
+  background-image: url("../img/checked-checkbox.png");
+  background-repeat: no-repeat;
+  position: 100% 100%;
 }
-
-
 .btn-search {
 	width: 143px;
 	min-height: 60px;
-	margin-top: 33px;
+	margin-top: 30px;
+	margin-left: -22px;
 }
-
 .btn-search-criteria {
 	width: 143px;
 	height: 36px;
@@ -1556,7 +1408,6 @@ input[type="checkbox"]:checked + label:before {
 	border: 2px solid #ffffff;
 	font-weight: 500;
 }
-
 .btn-search-criteria:hover {
 	background-color: #ffffff;
 	color: #323232;
@@ -1569,40 +1420,35 @@ input[type="checkbox"]:checked + label:before {
 	font-weight: 600;
 	box-shadow: inset 0 2px 1px 0 #696969;
 }
-
 .filter-range {
 	position: relative;
 	width: 218px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	margin-top: 5px;
+	margin-top: -2px;
 	margin-right: 15px;
-
+	margin-left: 5px;
 }
 .filter-range-title {
-	margin-left: 15px;
+	margin-left: 13px;
 }
 .price-controls {
 	position: absolute;
-	top: 0px;
-	left: 55px;
+	top: -1px;
+	left: 54px;
 }
-
 .price-controls label + input {
   
   display: inline-block;
   font-size: 14px;
   line-height: 14px;
   vertical-align: top;
-  
- }
+}
 .price-controls label,
 .price-controls input   {
 	cursor: pointer;
 }
-
-
 .price-controls input {
   width: 27px;
   margin: 0;
@@ -1613,12 +1459,11 @@ input[type="checkbox"]:checked + label:before {
 }
 .range-controls {
   position: relative;
-  margin-top: 7px;
+  margin-top: 5px;
   width: 218px;
   height: 36px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-
 }
 .range-controls .scale {
   position: absolute;
@@ -1631,7 +1476,7 @@ input[type="checkbox"]:checked + label:before {
 .range-controls .bar {
  position: absolute;
   margin-left: 20px;
-  left: 15px;
+  left: 13px;
   width: 102px;
   height: 4px;
   background: #ffffff;
@@ -1648,19 +1493,16 @@ input[type="checkbox"]:checked + label:before {
 .range-toggle-min {
   left: 34px;
 }
-
 .range-toggle-max {
-  left: 138px;
+  left: 130px;
 }
-
 .pagination {
-	margin-top: 80px;
+	margin-top: 48px;
 	display: flex;
 	justify-content: flex-end;
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .pagination li {
 	padding: 0;
 	margin: 0;
@@ -1668,11 +1510,11 @@ input[type="checkbox"]:checked + label:before {
 	min-width: 26px;
 	height: 26px;
 	margin-right: 0px;
+	margin-left: 2px;
 	text-align: center;
 	cursor: pointer;
 	vertical-align: center;
 }
-
 .pagination li:last-child {
 	margin-right: 0;
 }
@@ -1683,7 +1525,6 @@ input[type="checkbox"]:checked + label:before {
 	background-color: #ffffff;
 	color: #323232;
 	border-radius: 50%;
-
 }
 .catalog-page {
 	text-decoration: none;
@@ -1693,18 +1534,14 @@ input[type="checkbox"]:checked + label:before {
 	width: 26px;
 	height: 24px;
 	padding-top: 2px;
-	
 }
-
 .pagination .next,
 .pagination .prev {
 	position: relative;
 	display: block;
 	width: 26px;
 	height: 24px; 
-	
 }
-
 .catalog-page:hover:not(.active) {
 	display: block;
 	width: 26px;
@@ -1712,8 +1549,6 @@ input[type="checkbox"]:checked + label:before {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
 }
-
-
 .prev:before {
 	position: absolute;
 	display: block;
@@ -1724,7 +1559,6 @@ input[type="checkbox"]:checked + label:before {
 	transform: rotate(45deg);
 	top: 5px;
 	left: 10px;
-
 }
 .prev:after {
 	position: absolute;
@@ -1747,7 +1581,6 @@ input[type="checkbox"]:checked + label:before {
 	transform: rotate(-45deg);
 	top:5px;
 	right: 11px;
-
 }
 .next:after {
 	position: absolute;
