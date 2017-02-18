@@ -1,13 +1,12 @@
 body {
-	width: 1200px; /* убрать */
-	margin: 0;
-  	padding: 0;
-	font-size: 16px; 
-	line-height: 22px;
-	color: #ffffff; 
-	background-color: #849d8f; 
-	font-weight: 500;    
-	font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; 
+  line-height: 22px;
+  color: #ffffff; 
+  background-color: #849d8f; 
+  font-weight: 500;    
+  font-family: "Roboto", "Arial", sans-serif;
 }
 body > input[type="radio"] {
   display: none;
@@ -30,7 +29,7 @@ body > input[type="radio"] {
 }
 .slider {
   position: relative;
-  padding-top: 255px; /*по макету 324px почему??? */
+  padding-top: 302px; 
   text-align: center;
   color: #ffffff;
   z-index: 10;
@@ -41,6 +40,7 @@ body > input[type="radio"] {
 .slide-title {
   width: 700px;
   margin: 0 auto;
+  padding: 0;
   margin-bottom: 30px;
   font-weight: 800;
   font-size: 60px;
@@ -127,7 +127,7 @@ body > input[type="radio"] {
 }
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 18px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -148,7 +148,7 @@ body > input[type="radio"] {
 	width: 154px;
 	height: 64px;
 	margin-right: 10px;
-	margin-top: 7px;
+	margin-top: 9px;
 }
 .main-menu > li {
 	width: 500px; 
@@ -166,7 +166,7 @@ body > input[type="radio"] {
 	font-size: 16px; 
 	line-height: 18px;
 	color: #ffffff;
-	margin-top: 19px;
+	margin-top: 23px;
 	margin-right: -1px;
 	text-decoration: none;
 }
@@ -283,7 +283,7 @@ a.act {
 }
 .user-block  {
 	display: flex;
-	margin-top: 19px;
+	margin-top: 23px;
 	padding: 0px;
 	text-decoration: none;
 }
@@ -384,7 +384,6 @@ a.act {
 .password:focus::-webkit-input-placeholder {
 	color: transparent
 }
-
 .loupe:hover .search {
 	display: block;
 }
@@ -392,7 +391,6 @@ a.act {
 	background-color: #f8f7f4;
 	background-position: -3px -630px;
 }
-/*слетает ховер с кнопки когда переходим на форму ????? */
 .enter {
 	position: relative;
 	width: 92px;
@@ -474,7 +472,7 @@ a.act {
 .registration {
 	position: absolute;
 	font-size: 13px;
-	line-height: 15px; /*в макете 24, но тогда подчеркивание уезжает */
+	line-height: 15px; 
 	color: #323232;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(50, 50, 50, 0.3);
@@ -511,17 +509,17 @@ a.act {
 	color: #ffffff;
 	background-color: rgba(225, 225, 225, 0.2);
 	border-radius: 50px;
-	background-position: 3px -3px;
+	background-position: 5px -3px;
 }
 .cart-empty-label {
 	position: absolute;
-	margin-left: 46px;
+	margin-left: 44px;
 	margin-top: 8px;
 }
 .cart-empty:hover {
 	background-color: #f8f7f4;
 	color: #323232;
-} /* ??? или здесь вобще не надо наведение */
+} 
 .cart-with-item {
 	position: relative;
 	width: 117px;
@@ -564,7 +562,6 @@ a.act {
 }
 .cart-with-item-padding:hover .cart {
 	display: block;
-
 }
 table {
 	width: auto;
@@ -622,11 +619,12 @@ table {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	margin-left: 982px;
 	padding: 0px;
 	padding-top: 8px;
-	margin-top: -35px; 
 	text-align: end;
+	top: 52px;
+	right: 30px;
+	position: absolute;
 }
 .phone {
 	font-size: 22px;
@@ -639,7 +637,8 @@ table {
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
-	margin-top: 42px;
+	margin-top: 44px;
+	margin-bottom: 16px;
 }
 .promo-item {
 	width: 560px;
@@ -689,31 +688,18 @@ table {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.products,
-.shop-description,
-.news-and-subsrcribe {
-	margin-top: 5px;
-	margin-bottom: 20px;
-}
 .products {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 0;
-}
-.products h3 {
-	font-size: 16px; 
-	line-height: 22px;
-	text-align: center;
-	margin-top: 0px;
-	padding-left: 5px;
+	margin: 0;
 }
 .product-item {
 	position: relative;
 	width: 267px;
 	min-height: 300px;
-	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-top: 24px;
 }
 .hover-block {
 	display: none;
@@ -770,14 +756,15 @@ table {
 	border-bottom: none;
 	margin-left: 5px;
 }
-.product-item h3 /*было а */ {
+.product-item h3 {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 	color: #ffffff;
 	text-align: center;
-	margin-top: 5px;
-	padding-left: 10px;
+	margin-top: 6px;
+	margin-left: 0px;
+	margin-right: 10px;
 }
 .product-item span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -796,8 +783,10 @@ table {
 .shop-description {
 	position: relative;
 	background-image: url("../img/waffle-bg.png");
-	border-radius: 20px;
+	border-radius: 10px;
 	height: 306px;
+	margin-top: 22px;
+	margin-bottom: 39px;
 }
 .shop-description h2,
 .news-and-subsrcribe a {
@@ -820,11 +809,12 @@ table {
 	flex-wrap: wrap;
 }
 .description {	
-	width: 480px;
+	width: 490px;
 	min-height: 88px;
 	margin: 0;
 	padding: 0;
-	margin-left: 80px;
+	margin-left: 76px;
+	margin-top: 1px;
 }
 .description-logo {
 	position: absolute;
@@ -855,6 +845,7 @@ table {
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
+	margin-bottom: 41px;
 }
 .item {
 	width: 560px;
@@ -864,10 +855,12 @@ table {
 .news {
 	background-image: url("../img/news-strawberry-bg.jpg");
 	background-repeat: no-repeat;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 .news h2 {
-	padding-top: 10px;
+	padding: 0;
+	margin: 0;
+	margin-top: 23px;
 	padding-left: 20px;
 }
 .news-link {
@@ -876,6 +869,7 @@ table {
 	padding: 0;
 	width: 287px;
 	margin-left: 20px;
+	margin-top: 5px;
 }
 .subscribe {
 	position: relative;
@@ -890,7 +884,8 @@ table {
 	line-height: 22px;
 	font-weight: normal;
 	color: #5a5a5a;
-	padding-left: 30px;
+	padding-left: 20px;
+	padding-top: 13px;
 }
 .white-background {
 	position: absolute;
@@ -905,13 +900,12 @@ table {
 }
 .subscribe .e-mail {
 	position: absolute;
-	width: 348px;
-	top: 131px;
-	right: 161px;
+	width: 350px;
+	top: 130px;
+	right: 163px;
 }
 .subscribe-btn {
 	position: absolute;
-	/*padding: 10px 20px; */
 	width: 128px;
 	height: 43px; 
 	font-size: 18px;
@@ -926,8 +920,8 @@ table {
 }
 .adress {
 	position: absolute;
-	width: 279px;
-	height: 282px;
+	width: 276px;
+	height: 290px;
 	background-color: #ffffff;
 	border-radius: 20px;
 	font-size: 14px;
@@ -935,10 +929,22 @@ table {
 	color: #323232;
 	padding: 0;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-left: 26px;
 	right: 27px;
 	top: 62px;
+}
+.adress p {
+	margin: 0;
+	padding: 0;
+	margin-top: 14px;
+}
+.for-order {
+	padding-top: 18px;
+	
+}
+.for-order p {
+	margin-top: 5px;
 }
 .adress span {
 	font-size: 18px;
@@ -956,7 +962,6 @@ table {
 	bottom: 31px;
 }
 .main-footer {
-	padding-top: 17px;
 	padding-bottom: 14px;
 }
 .main-footer-layout {
@@ -966,6 +971,7 @@ table {
 	width: 267px;
 	min-height: 34px;
 	margin-left: 0;
+	padding-top: 25px;
 }
 .social-btn {
 	display: inline-block;
@@ -1002,7 +1008,7 @@ background-position: -10px -849px;
 	margin: 0;
 	padding: 0;
 	margin-left: 155px;
-	margin-top: -5px;
+	padding-top: 23px;
 }
 .navigation {
 	list-style: none;
@@ -1049,6 +1055,11 @@ li:first-child a.footer-nav{
 	font-size: 12px;
 	width: 204px;
 	margin-left: auto;
+	top: 25px;
+	left: 7px;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .footer-logo {
 	position: absolute;
@@ -1067,12 +1078,11 @@ li:first-child a.footer-nav{
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 /* СЕТКА CATALOG */
-.breadcrumbs {
-	margin-left: -38px; /* ??? почему так */
-}
 .breadcrumbs ul {
 	display: flex;
-	margin-top: -44px;
+	padding: 0;
+	margin-top: 9px;
+	margin-bottom: 2px;
 }
 .breadcrumbs li {
 	
@@ -1192,11 +1202,15 @@ li:first-child a.footer-nav{
 	line-height: 41px;
 	padding: 0;
 	padding: 0;
-	margin-top: -14px;
+	margin-top: 0;
+	margin-bottom: 27px;
 }
 .search-criteria {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -4px;
 }
 .sort {
 	position: relative;
@@ -1236,190 +1250,6 @@ li:first-child a.footer-nav{
 	background-color: #ffffff;
 	color: #323232;
 }
-.fat {
-	position: relative;
-	border: none;
-	position: relative;
-	margin-bottom: 20px;
-}
-.fat-range {
-	position: absolute;
-	width: 394px;
-	height: 21px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	left: 0;
-	top: 20px;
-}
-.fat legend {
-	position: absolute;
-	top: -2px;
-	left: 12px;
-}
-.fat label,
-.filler label,
-.btn-search-criteria {
-	font-size: 16px;
-	line-height: 18px;
-	margin-right: 10px;
-	font-weight: 450;
-}
-input[type="radio"] {
-	display: none;
-} 
-input[type="radio"] + label {
-  display: inline-block;
-  position: relative;
-  padding-left: 33px;
-  padding-top: 4px;
-  color: #ffffff;
-  cursor: pointer;
-}
-input[type="radio"] + label:before {
-  content: "";
-  display: block;
-  width: 17px;
-  height: 17px;
-  border: 1px solid #ffffff;
-  position: absolute;
-  left: 2px;
-  top: 4px;
-  border-radius: 50px;
-}
-input[type="radio"] + label:hover:before,
-input[type="checkbox"] + label:hover:before,
-input[type="radio"]:checked + label:hover:before  {
-	border: 2px solid #ffffff;
-	top: -1px;
-	left: -1px;
-}
-input[type="radio"]:checked + label:hover:after {
-	left: 6px;
-	left: 5px;
-}
-input[type="radio"]:disabled + label:before,
-input[type="checkbox"]:disabled + label:hover:before {
-	opacity: 0.4;
-}
-/* доделать спарйт */
-input[type="checkbox"]:checked + label:hover:before {
-	display: block;
-	background-image: url("../img/checked-checkbox-active.png");
-	background-repeat: no-repeat;
-	position: 100% 100%;
-	top: 0px;
-	left: 0;
-}
-input[type="radio"]:checked + label:after {
-	content: "";
-    display: block;
-    position: absolute;
-	width: 11px;
-	height: 11px;
-	background: #ffffff;
-	border-radius: 50px;
-	left: 5px;
-  	top: 5px;
-}
-input[type="radio"]:checked + label:before {
-  content: "";
-  display: block;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #ffffff;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 50px;
-}
-.filler {
-	position: relative;
-	width: 702px;
-	min-height: 60px; 
-	margin-right: 15px;
-	margin-top: 14px;
-	margin-bottom: 10px;
-	border: none;
-}
-.filler legend {
-	margin-left: 3px;
-	padding-top: 3px;
-}
-.filler-range {
-	position: absolute;
-	width: 682px;
-	height: 21px;
-	margin: 0;
-	padding: 0;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	left:0;
-}
-input[type="checkbox"] {
-	display: none;
-} 
-input[type="checkbox"] + label {
-  display: inline-block;
-  position: relative;
-  padding-left: 36px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  cursor: pointer;
-}
-input[type="checkbox"] + label:before {
-  content: "";
-  display: block;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #ffffff;
-  position: absolute;
-  left: 3px;
-  top: 0;
-  border-radius: 5px;
-}
-input[type="checkbox"]:checked + label:before {
-  border: none;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/checked-checkbox.png");
-  background-repeat: no-repeat;
-  position: 100% 100%;
-}
-.btn-search {
-	width: 143px;
-	min-height: 60px;
-	margin-top: 30px;
-	margin-left: -22px;
-}
-.btn-search-criteria {
-	width: 143px;
-	height: 36px;
-	border: none;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin-top: 8px;
-	border-radius: 20px;
-	color: #ffffff;
-	border: 2px solid #ffffff;
-	font-weight: 500;
-}
-.btn-search-criteria:hover {
-	background-color: #ffffff;
-	color: #323232;
-	font-weight: 600;
-}
-.btn-search-criteria:active {
-	border: none;
-	background-color: #ededed;
-	color: #323232;
-	font-weight: 600;
-	box-shadow: inset 0 2px 1px 0 #696969;
-}
 .filter-range {
 	position: relative;
 	width: 218px;
@@ -1427,7 +1257,7 @@ input[type="checkbox"]:checked + label:before {
 	line-height: 16px;
 	font-weight: 500;
 	margin-top: -2px;
-	margin-right: 15px;
+	margin-right: 12px;
 	margin-left: 5px;
 }
 .filter-range-title {
@@ -1496,12 +1326,202 @@ input[type="checkbox"]:checked + label:before {
 .range-toggle-max {
   left: 130px;
 }
+.fat {
+	position: relative;
+	border: none;
+	position: relative;
+	margin-bottom: 20px;
+}
+.fat-range {
+	position: absolute;
+	width: 394px;
+	height: 21px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	left: 0;
+	top: 20px;
+}
+.fat legend {
+	position: absolute;
+	top: -2px;
+	left: 12px;
+}
+.fat label,
+.filler label,
+.btn-search-criteria {
+	font-size: 16px;
+	line-height: 18px;
+	margin-right: 10px;
+	font-weight: 450;
+}
+input[type="radio"] {
+	display: none;
+} 
+input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  margin-right: 14px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+}
+input[type="radio"] + label:hover:before,
+input[type="checkbox"] + label:hover:before,
+input[type="radio"]:checked + label:hover:before  {
+	border: 2px solid #ffffff;
+	top: 3px;
+	left: -3px;
+}
+input[type="checkbox"] + label:hover:before {
+	top: -1px;
+	left: 2px;
+}
+input[type="radio"]:disabled + label:before,
+input[type="checkbox"]:disabled + label:hover:before {
+	opacity: 0.4;
+}
+input[type="checkbox"]:checked + label:hover:before {
+	display: block;
+	background-image: url("../img/checked-checkbox-active.png");
+	background-repeat: no-repeat;
+	position: 100% 100%;
+	top: 0px;
+	left: 3px;
+}
+input[type="radio"]:checked + label:after {
+	content: "";
+    display: block;
+    position: absolute;
+	width: 11px;
+	height: 11px;
+	background: #ffffff;
+	border-radius: 50px;
+	left: 3px;
+  	top: 9px;
+}
+input[type="radio"]:checked + label:before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  border-radius: 50px;
+}
+.filler {
+	position: relative;
+	width: 702px;
+	min-height: 60px; 
+	margin-right: 15px;
+	margin-top: 14px;
+	margin-bottom: 0px;
+	border: none;
+}
+.filler legend {
+	margin-left: 3px;
+	padding-top: 3px;
+}
+.filler-range {
+	position: absolute;
+	width: 682px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	left: 0;
+}
+input[type="checkbox"] {
+	display: none;
+} 
+input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  border-radius: 5px;
+}
+input[type="checkbox"]:checked + label:before {
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checked-checkbox.png");
+  background-repeat: no-repeat;
+  position: 100% 100%;
+}
+.btn-search {
+	width: 143px;
+	min-height: 60px;
+	margin-top: 30px;
+	margin-left: -22px;
+}
+.btn-search-criteria {
+	width: 143px;
+	height: 36px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin-top: 8px;
+	border-radius: 20px;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	font-weight: 500;
+}
+.btn-search-criteria:hover {
+	background-color: #ffffff;
+	color: #323232;
+	font-weight: 600;
+}
+.btn-search-criteria:active {
+	border: none;
+	background-color: #ededed;
+	color: #323232;
+	font-weight: 600;
+	box-shadow: inset 0 2px 1px 0 #696969;
+}
 .pagination {
-	margin-top: 48px;
+	margin: 0;
+	padding: 0;
+	margin-top: 65px;
 	display: flex;
 	justify-content: flex-end;
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 8px;
 }
 .pagination li {
 	padding: 0;
@@ -1517,6 +1537,7 @@ input[type="checkbox"]:checked + label:before {
 }
 .pagination li:last-child {
 	margin-right: 0;
+
 }
 .pagination .active {
 	display: inline-block;
@@ -1593,15 +1614,3 @@ input[type="checkbox"]:checked + label:before {
 	right: 11px;
 	transform: rotate(45deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
