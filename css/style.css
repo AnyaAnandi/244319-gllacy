@@ -366,7 +366,10 @@ a.act {
 } 
 .search-field:focus ~ .search-label,
 .e-mail:focus ~ .e-mail-label,
-.password:focus ~ .password-label {
+.password:focus ~ .password-label,
+.name:focus ~ .name-label,
+.e-mail-answer:focus ~ .e-mail-answer-label,
+.comment:focus ~ .comment-label {
 	font-size: 11px;
 	line-height: 13px;
 	color: #5b9ddf;
@@ -379,17 +382,21 @@ a.act {
 	top: 110px;
 	left: 40px;
 }
-.search-field:focus::-webkit-input-placeholder,
-.e-mail:focus::-webkit-input-placeholder,
-.password:focus::-webkit-input-placeholder {
-	color: transparent
-}
 .loupe:hover .search {
 	display: block;
 }
 .loupe:hover .loupe-btn {
 	background-color: #f8f7f4;
 	background-position: -3px -630px;
+}
+.name:focus ~ .name-label {
+	top: 45px;	
+}
+.e-mail-answer:focus ~ .e-mail-answer-label {
+	top: 115px;
+}
+.comment:focus ~ .comment-label {
+	top: 178px;
 }
 .enter {
 	position: relative;
@@ -442,12 +449,18 @@ a.act {
 	z-index: 1000;
 }
 .e-mail:hover,
-.password:hover {
+.password:hover,
+.name:hover,
+.e-mail-answer:hover,
+.comment:hover {
 	right: 17px;
 	border: 2px solid #9a9a9a;
 }
 .e-mail:focus,
-.password:focus {
+.password:focus,
+.name:focus,
+.e-mail-answer:focus,
+.comment:focus {
 	border: 2px solid #2e88e4;
 	font-weight: bold;
 	outline: none;
@@ -737,7 +750,7 @@ table {
 	position: absolute;
 	width: 61px;
 	height: 61px;
-	background-position: -10px -329px;;
+	background-position: -10px -329px;
 }
 .product-img {
 	border-radius: 160px;
@@ -746,7 +759,7 @@ table {
 }
 .product-item b {
 	position: absolute;
-	font-size: 45px; /* не показывает фотошоп */
+	font-size: 45px; 
 	line-height: 45px;
 	bottom: 80px;
 	left: 0;
@@ -766,7 +779,7 @@ table {
 	margin-left: 0px;
 	margin-right: 10px;
 }
-.product-item span {
+.product-item span:not(.hit) {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .product-item a:hover,
@@ -1522,6 +1535,7 @@ input[type="checkbox"]:checked + label:before {
 	padding-bottom: 30px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	margin-bottom: 8px;
+	margin-right: -8px;
 }
 .pagination li {
 	padding: 0;
@@ -1562,6 +1576,9 @@ input[type="checkbox"]:checked + label:before {
 	display: block;
 	width: 26px;
 	height: 24px; 
+}
+.pagination .next {
+	margin-left: 5px;
 }
 .catalog-page:hover:not(.active) {
 	display: block;
@@ -1613,4 +1630,124 @@ input[type="checkbox"]:checked + label:before {
 	top: 11px;
 	right: 11px;
 	transform: rotate(45deg);
+}
+.modal-content {
+	display: none;
+	position: fixed;
+	width: 477px;
+	height: 442px;
+	background-color: #f8f7f4;
+	border-radius: 10px;
+	top: 330px;
+	left: 50%;
+	margin-left: -238px;
+	z-index: 3000;
+}
+.modal-content-close {
+	position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 19px;
+  height: 3px;
+  background-color: #323232;
+  border-radius: 1px;
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-content-title {
+	padding: 0;
+	margin: 0;
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	margin-left: 24px;
+	margin-top: 18px;
+	font-weight: normal;
+}
+.name,
+.e-mail-answer {
+	position: absolute;
+	width: 267px;
+	height: 44px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid #d3d3d2;
+	font-size: 16px;
+	line-height: 24px;
+}
+.name {
+	top: 63px;
+	left: 24px;
+}
+.e-mail-answer {
+	top: 130px;
+	left: 24px;
+}
+.comment {
+	position: absolute;
+	width: 428px;
+	height: 155px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid #d3d3d2;
+	font-size: 16px;
+	line-height: 24px;
+	top: 191px;
+	left: 24px;
+	resize: none;
+
+}
+.name-label,
+.e-mail-answer-label,
+.comment-label {
+	position: absolute;
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	font-weight: normal;
+	left: 40px;
+}
+.name-label {
+	top: 74px;	
+}
+.e-mail-answer-label {
+	top: 140px;
+}
+.comment-label {
+	top: 201px;
+}
+.modal-btn {
+	position: absolute;
+	top: 371px;
+	right: 25px;
+	width: 138px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2500;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
