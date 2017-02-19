@@ -1699,7 +1699,7 @@ input[type="checkbox"]:checked + label:before {
 	        transform: rotate(45deg);
 }
 .modal-content {
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	width: 477px;
 	height: 442px;
@@ -1811,7 +1811,7 @@ input[type="checkbox"]:checked + label:before {
 	padding-right: 24px;
 }
 .modal-overlay {
-	/*display: none;*/
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
