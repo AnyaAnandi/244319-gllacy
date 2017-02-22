@@ -975,6 +975,9 @@ table {
 .map {
 	width: 100%;
 }
+iframe {
+	width:100%
+}
 .map-interactive {
 	display: block;
 	width: 100%;
