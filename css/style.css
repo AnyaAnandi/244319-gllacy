@@ -1774,7 +1774,6 @@ input[type="checkbox"]:checked + label:before {
 	top: 20vh;
 	position: fixed;
 	display: none;
-	position: absolute;
 	width: 477px;
 	height: 442px;
 	background-color: #f8f7f4;
