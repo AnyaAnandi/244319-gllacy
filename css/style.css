@@ -1708,8 +1708,8 @@ input[type="checkbox"]:checked + label:before {
 }
 @-webkit-keyframes bounce {
   0%   {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   70%  {
     -webkit-transform: translateY(30px);
@@ -1720,14 +1720,14 @@ input[type="checkbox"]:checked + label:before {
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 @keyframes bounce {
   0%   {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   70%  {
     -webkit-transform: translateY(30px);
@@ -1738,8 +1738,8 @@ input[type="checkbox"]:checked + label:before {
             transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 @-webkit-keyframes shake {
@@ -1771,6 +1771,8 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 .modal-content {
+	top: 20vh;
+	position: fixed;
 	display: none;
 	position: absolute;
 	width: 477px;
